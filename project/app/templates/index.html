@@ -1,0 +1,37 @@
+<!-- myapp/templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App</title>
+
+    {% load static %} <!-- Add this line to load the static tag library -->
+
+    <script src="{% static 'app/js/main.js' %}"></script>
+</head>
+<body>
+    <h1>Person List</h1>
+    <ul id="person-list">
+        <!-- Person data will be populated here dynamically -->
+    </ul>
+
+    <h1>Bike List</h1>
+    <ul id="bike-list">
+        <!-- Bike data will be populated here dynamically -->
+    </ul>
+
+    <h2>Add a User</h2>
+    <form id="add-user-form">
+        {% csrf_token %}
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first_name" required>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last_name" required>
+
+        <button type="button" onclick="addUser()">Add User</button>
+    </form>
+</body>
+</html>
