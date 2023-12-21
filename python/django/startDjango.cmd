@@ -12,4 +12,4 @@ start http://localhost:8000
 
 REM Run Django development server
 cd %PROJECT_NAME%
-REM python manage.py runserver
+python manage.py runserver

@@ -12,18 +12,14 @@
     <script src="{% static 'app/js/main.js' %}"></script>
 </head>
 <body>
+    <!-- person_list.html -->
     <h1>Person List</h1>
     <ul id="person-list">
         <!-- Person data will be populated here dynamically -->
     </ul>
 
-    <h1>Bike List</h1>
-    <ul id="bike-list">
-        <!-- Bike data will be populated here dynamically -->
-    </ul>
-
     <h2>Add a User</h2>
-    <form id="add-user-form">
+    <form id="add-user-form" method="post" action="/persons/">
         {% csrf_token %}
         <label for="first-name">First Name:</label>
         <input type="text" id="first-name" name="first_name" required>
@@ -31,7 +27,38 @@
         <label for="last-name">Last Name:</label>
         <input type="text" id="last-name" name="last_name" required>
 
-        <button type="button" onclick="addUser()">Add User</button>
+        <button type="submit">Add User</button>
     </form>
+
+    <!-- Add a Bike Type -->
+    <!-- <h2>Add a Bike Type</h2>
+    <form id="add-bike-type-form">
+        {% csrf_token %}
+        <label for="bike-type-name">Bike Type Name:</label>
+        <input type="text" id="bike-type-name" name="name" required>
+    
+        <button type="submit">Add Bike Type</button>
+    </form> -->
+
+    <!-- Add a Bike -->
+    <!-- <h2>Add a Bike</h2>
+    <form id="add-bike-form">
+        {% csrf_token %}
+        <label for="bike-type">Bike Type:</label>
+        <select id="bike-type" name="bike_type" required>
+            {% for bike_type in bike_types %}
+                <option value="{{ bike_type.id }}">{{ bike_type.name }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="bike-model">Bike Model:</label>
+        <input type="text" id="bike-model" name="bike_model" required>
+
+        <label for="serial-number">Serial Number:</label>
+        <input type="number" id="serial-number" name="serial_number" required>
+
+        <button type="button" onclick="addBike()">Add Bike</button>
+    </form> -->
+
 </body>
 </html>
