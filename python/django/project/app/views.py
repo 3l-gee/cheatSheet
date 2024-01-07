@@ -6,6 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 import json
 from .models import Person
+from .forms import PersonForm
 
 
 def index(request):
@@ -17,27 +18,28 @@ class PersonView(View):
         return render(request, 'person_list.html', {'persons': persons})
     
     def post(self,request):
-        try :
-            data = json.loads(request.body)
-            first_name = data.get('first_name')
-            last_name = data.get('last_name')
+        form = PersonForm(request.POST)
+        try:
+            if form.is_valid():
+                first_name = form.cleaned_data['first_name']
+                last_name = form.cleaned_data['last_name']
 
-            if not first_name or not last_name:
-                return JsonResponse({'success': False, 'message': 'First name and last name are required.'}, status=400)
-            
-            new_person = Person.objects.create(first_name=first_name, last_name=last_name)
+                new_person = Person.objects.create(first_name=first_name, last_name=last_name)
 
-            response_data = {
-                'success': True,
-                'message': 'Person created successfully',
-                'person': {
-                    'first_name': new_person.first_name,
-                    'last_name': new_person.last_name,
+                response_data = {
+                    'success': True,
+                    'message': 'Person created successfully',
+                    'person': {
+                        'first_name': new_person.first_name,
+                        'last_name': new_person.last_name,
+                    }
                 }
-            }
-            return JsonResponse(response_data, status=201)
+                return JsonResponse(response_data, status=201)
+            else:
+                return JsonResponse({'success': False, 'message': 'Invalid form data'}, status=400)
         except Exception as e:
-            return JsonResponse({'success': False, 'message': str(e)}, status=500)
+            print(f"An error occurred: {str(e)}")
+            return JsonResponse({'success': False, 'message': 'Internal server error'}, status=500)
         
 # @method_decorator(csrf_exempt, name='dispatch')
 # class BikeTypeView(View):

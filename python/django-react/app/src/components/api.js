@@ -1,33 +1,67 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8000/app/';
+const BASE_URL = 'http://localhost:8000';
 
 const api = axios.create({
   baseURL: BASE_URL,
 });
 
-// Function to handle GET requests
-export const fetchData = async (endpoint) => {
-  try {
-    const response = await api.get(endpoint);
-    return response.data;
-  } catch (error) {
-    console.error(`Error fetching data from ${endpoint}:`, error);
-    throw error; // Propagate the error to the calling function/component
+class BaseApi {
+  constructor(app, subUrl) {
+    this._app = app;
+    this._subUrl = subUrl;
   }
-};
 
-// Function to handle POST requests
-export const postData = async (endpoint, data) => {
-  try {
-    const response = await api.post(endpoint, data);
-    return response.data;
-  } catch (error) {
-    console.error(`Error posting data to ${endpoint}:`, error);
-    throw error; // Propagate the error to the calling function/component
+  handleErrors(error, action) {
+    console.error(`Error ${action}:`, error);
+    throw error;
   }
-};
 
-// Add more functions for other HTTP methods (PUT, DELETE, etc.) if needed
+  async get() {
+    try {
+      const response = await api.get(`${BASE_URL}/${this._app}/${this._subUrl}/`);
+      return response;
+    } catch (error) {
+      return this.handleErrors(error, `fetching ${this._subUrl}`);
+    }
+  }
 
-export default api;
+  async post(data) {
+    try {
+      await api.post(`${BASE_URL}/${this._app}/${this._subUrl}/`, data);
+    } catch (error) {
+      return this.handleErrors(error, `creating ${this._subUrl}`);
+    }
+  }
+
+  async delete(uuid) {
+    try {
+      await api.delete(`${BASE_URL}/${this._app}/${this._subUrl}/${uuid}`);
+    } catch (error) {
+      return this.handleErrors(error, `deleting ${this._subUrl}`);
+    }
+  }
+
+  async put(uuid, data) {
+    try {
+      await api.put(`${BASE_URL}/${this._app}/${this._subUrl}/${uuid}/`, data);
+    } catch (error) {
+      return this.handleErrors(error, `changing ${this._subUrl}`);
+    }
+  }
+}
+
+class ClassBikeApi extends BaseApi {
+  constructor() {
+    super('app', 'bikes');
+  }
+}
+
+class ClassPersonApi extends BaseApi {
+  constructor() {
+    super('app', 'persons');
+  }
+}
+
+const PersonApi = new ClassPersonApi();
+export { PersonApi, ClassBikeApi };
