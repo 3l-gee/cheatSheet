@@ -64,4 +64,5 @@ class ClassPersonApi extends BaseApi {
 }
 
 const PersonApi = new ClassPersonApi();
-export { PersonApi, ClassBikeApi };
+const BikeApi = new ClassBikeApi ();
+export { PersonApi, BikeApi };

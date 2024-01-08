@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import PersonComponent from './components/personComponent.js';
+import BikeComponent from './components/bikeComponent.js'; 
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       </div>
       <div className="person-component">
       <h2>BikeComponent</h2>
-        <PersonComponent/>
+        <BikeComponent/>
       </div>
     </div>
   );

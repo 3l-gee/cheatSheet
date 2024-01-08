@@ -14,6 +14,7 @@ function PersonComponent() {
     const [newPerson, setNewPerson] = useState({
         first_name: '',
         last_name: '',
+        person: '',
     });
 
     useEffect(() => {
