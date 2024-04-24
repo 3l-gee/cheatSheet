@@ -1,0 +1,64 @@
+<!-- myapp/templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App</title>
+
+    {% load static %} <!-- Add this line to load the static tag library -->
+
+    <script src="{% static 'app/js/main.js' %}"></script>
+</head>
+<body>
+    <!-- person_list.html -->
+    <h1>Person List</h1>
+    <ul id="person-list">
+        <!-- Person data will be populated here dynamically -->
+    </ul>
+
+    <h2>Add a User</h2>
+    <form id="add-user-form" method="post" action="/persons/">
+        {% csrf_token %}
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first_name" required>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last_name" required>
+
+        <button type="submit">Add User</button>
+    </form>
+
+    <!-- Add a Bike Type -->
+    <!-- <h2>Add a Bike Type</h2>
+    <form id="add-bike-type-form">
+        {% csrf_token %}
+        <label for="bike-type-name">Bike Type Name:</label>
+        <input type="text" id="bike-type-name" name="name" required>
+    
+        <button type="submit">Add Bike Type</button>
+    </form> -->
+
+    <!-- Add a Bike -->
+    <!-- <h2>Add a Bike</h2>
+    <form id="add-bike-form">
+        {% csrf_token %}
+        <label for="bike-type">Bike Type:</label>
+        <select id="bike-type" name="bike_type" required>
+            {% for bike_type in bike_types %}
+                <option value="{{ bike_type.id }}">{{ bike_type.name }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="bike-model">Bike Model:</label>
+        <input type="text" id="bike-model" name="bike_model" required>
+
+        <label for="serial-number">Serial Number:</label>
+        <input type="number" id="serial-number" name="serial_number" required>
+
+        <button type="button" onclick="addBike()">Add Bike</button>
+    </form> -->
+
+</body>
+</html>
