@@ -1,7 +1,7 @@
 # PIP 101
 
 Install a package
-```python
+```bash
 pip install SomePackage                         # latest version
 pip install "SomePackage==1.0.4"                # specific version
 pip install "SomePackage>=1.0.4"                # minimum version

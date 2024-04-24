@@ -6,3 +6,4 @@ This one liner opens a virtual environement, activates it and installs al the re
 ```bash
 python -m venv .venv && .venv\Scripts\activate.bat && pip install -r requirements.txt
 ```
+
