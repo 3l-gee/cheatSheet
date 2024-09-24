@@ -7,6 +7,8 @@ __pycache__/
 # - Environements should always be called .venv
 .venv
 
+data
+
 # VsCode
 .vs/
 .vscode/
