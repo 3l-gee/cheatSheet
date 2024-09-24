@@ -16,3 +16,6 @@ data
 
 # Secret keys
 *.secret
+
+#SQL
+*.backup
