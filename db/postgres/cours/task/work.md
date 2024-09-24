@@ -128,30 +128,4 @@ SELECT coalesce('Steve', Null);
 -- =>               Steve
 ```
 
-<<<<<<< HEAD
-Tip : postgresl
-```sql
-SELECT
-FROM
-JOIN
-GROUP BY
-WHERE
-ORDER BY
-LIMIT
-
--- Logic ORDER
-FROM + JOIN
-WHERE
-GROUP BY
-HAVING
-SELECT
-ORDER BY
-LIMIT
-```
-
-### Work 4
-
-# Task 
-=======
 ### Work 1
->>>>>>> 4ea9e0a (postgresql course)
