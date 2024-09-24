@@ -128,6 +128,7 @@ SELECT coalesce('Steve', Null);
 -- =>               Steve
 ```
 
+<<<<<<< HEAD
 Tip : postgresl
 ```sql
 SELECT
@@ -151,3 +152,6 @@ LIMIT
 ### Work 4
 
 # Task 
+=======
+### Work 1
+>>>>>>> 4ea9e0a (postgresql course)

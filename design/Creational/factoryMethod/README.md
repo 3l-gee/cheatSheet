@@ -72,5 +72,3 @@ On the other hand, it wount be easy to start making bows, as he doens't have the
     Blacksmith --> Axe : creates
     Blacksmith --> Helmet : creates
 ```
-
-
