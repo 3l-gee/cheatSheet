@@ -22,11 +22,7 @@
     - 3D
     - Point Cloud
 
-<<<<<<< HEAD
-# psql shell
-=======
-# psql
->>>>>>> 4ea9e0a (postgresql course)
+# psql shell 
 - automate Admin process
     - backup
     - updates
@@ -55,10 +51,4 @@
 - .sql 
     - Import
     - COPY (only with psql)
-<<<<<<< HEAD
-    - .backup (only with psql)
 
-# Functions
-=======
-    - .backup (only with psql)
->>>>>>> 4ea9e0a (postgresql course)

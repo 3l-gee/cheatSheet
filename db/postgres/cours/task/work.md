@@ -128,4 +128,35 @@ SELECT coalesce('Steve', Null);
 -- =>               Steve
 ```
 
-### Work 1
+### Work 2
+
+# task 1
+
+### Work 3
+
+# task 1 
+
+### Work 4
+
+# task 1 
+
+```sql
+CREATE TABLE schweiz.viertausender_ch
+(
+    gid integer NOT NULL,
+    name text,
+    hoehe integer,
+    xcoor integer,
+    ycoor integer,
+    rang integer,
+    gebirge text,
+    schartenhoehe integer,
+    schartenname text,
+    erstbesteigung date,
+    erstbesteiger text,
+    webpage text,
+    geom geometry(POINT,21781),
+    PRIMARY KEY (gid)
+);
+```
+
