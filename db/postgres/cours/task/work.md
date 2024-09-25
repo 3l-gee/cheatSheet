@@ -159,4 +159,59 @@ CREATE TABLE schweiz.viertausender_ch
     PRIMARY KEY (gid)
 );
 ```
+### Work 5
 
+# Task 1 
+
+```sql
+SELECT * FROM public.gemeinden 
+	WHERE ST_Touches(
+		geom::geometry,
+		(SELECT geom FROM public.seen WHERE name = 'Zürichsee')::geometry
+		)
+	ORDER BY name ASC;
+```
+
+# Task 2
+
+```sql
+CREATE INDEX index_kt ON public.gemeinden (kt);
+SELECT * FROM public.staedte WHERE ST_Within(
+	geom::geometry, 
+	(
+		SELECT ST_Union(geom::geometry)
+		FROM public.gemeinden 
+		WHERE kt = 2 
+	)::geometry
+);
+```
+
+# Task 3 
+
+```sql
+SELECT * FROM public.staedte 
+	WHERE ST_Within(
+		geom::geometry, 
+		(SELECT ST_Buffer(geom::geometry, 10000) FROM public.fluesse WHERE name = 'Emme')::geometry
+	);
+```
+
+# Task 4
+
+```sql
+
+```
+
+# Task 6
+
+```sql
+CREATE TABLE public.landesgrenze AS 
+	SELECT ST_ExteriorRing(ST_Union(geom))::geometry(LINESTRING,21781) 
+	AS geom 
+	FROM public.gemeinden;
+```
+
+# Task 7
+
+```sql
+```
