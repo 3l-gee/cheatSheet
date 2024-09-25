@@ -52,3 +52,4 @@
     - Import
     - COPY (only with psql)
 
+# Daten Modellierung 

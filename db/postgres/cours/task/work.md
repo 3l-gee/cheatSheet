@@ -214,4 +214,63 @@ CREATE TABLE public.landesgrenze AS
 # Task 7
 
 ```sql
+SELECT public.gemeinden.name, ST_length(
+	ST_Intersection(
+		public.gemeinden.geom,
+		public.landesgrenze.geom
+	)
+) as len FROM public.gemeinden, public.landesgrenze
+WHERE public.gemeinden.kt = 1
+	AND ST_length(
+		ST_Intersection(
+			public.gemeinden.geom,
+			public.landesgrenze.geom
+		)
+	) > 5000
+ORDER BY len DESC;
+```
+
+### Work 6
+
+# Task 0
+
+```sql
+UPDATE public.viertausender_ch
+SET geom = ST_SetSRID(ST_MakePoint(public.viertausender_ch.xcoor, public.viertausender_ch.ycoor), 21781);
+```
+
+# task 1
+
+```sql
+SELECT name, ST_Distance(
+		public.viertausender_ch.geom, 
+		(SELECT geom FROM public.landesgrenze)::geometry
+	)
+	FROM public.viertausender_ch
+	WHERE erstbesteigung < '1865-01-01'::date 
+	AND ST_Distance(
+		public.viertausender_ch.geom, 
+		(SELECT geom FROM public.landesgrenze)::geometry
+	) < 1000
+```
+
+# Task 2
+
+```sql
+SELECT s.name, f.name, 'Einfluss' AS aus_einfluss
+	FROM public.seen s, public.fluesse f
+	WHERE s.name IN ('Lac de Neuchâtel','Murtensee / Lac de Morat','Bielersee / Lac de Bienne')
+	AND ST_Touches(ST_EndPoint(f.geom), s.geom)
+UNION
+SELECT s.name, f.name, 'Ausfluss' AS aus_einfluss
+	 FROM public.seen s, public.fluesse f
+	 WHERE s.name IN ('Lac de Neuchâtel','Murtensee / Lac de Morat','Bielersee / Lac de Bienne')
+	 AND ST_Touches(ST_StartPoint(f.geom), s.geom)
+ORDER BY 1, 3, 2;
+```
+
+# Task 8
+
+```sql
+
 ```
