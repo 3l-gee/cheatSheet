@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT
+	xmlns="http://example.org/root_header"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://example.org/root_header ../../main/resources/RootHeader.xsd"
+>
+	<Header Header_Id="HDR001"/>
+	<Data_Block type="DB001">
+		<Sensing_Start_Time>2024-05-01T09:45:15.000Z</Sensing_Start_Time>
+		<Sensing_Stop_Time>2024-05-01T12:45:15.000Z</Sensing_Stop_Time>
+		<List_of_Acquisitions count="2">
+			<Acquisition Acquisition_Id="ACQ001"/>
+			<Acquisition Acquisition_Id="ACQ002"/>
+		</List_of_Acquisitions>
+		<List_Of_Dumps count="2">
+			<Dump Dump_Id="DMP001"/>
+			<Dump Dump_Id="DMP002"/>
+		</List_Of_Dumps>
+	</Data_Block>
+</ROOT>

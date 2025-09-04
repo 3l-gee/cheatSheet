@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence version="3.0" xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd https://jakarta.ee/xml/ns/persistence/orm https://jakarta.ee/xml/ns/persistence/orm/orm_3_0.xsd" xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:orm="https://jakarta.ee/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <persistence-unit name="org.example.root_header">
+        <class>org.example.root_header.AcquisitionType</class>
+        <class>org.example.root_header.DataBlock</class>
+        <class>org.example.root_header.DumpType</class>
+        <class>org.example.root_header.HeaderType</class>
+        <class>org.example.root_header.ListOfAcquisitions</class>
+        <class>org.example.root_header.ListOfDumps</class>
+        <class>org.example.root_header.ROOT</class>
+    </persistence-unit>
+</persistence>

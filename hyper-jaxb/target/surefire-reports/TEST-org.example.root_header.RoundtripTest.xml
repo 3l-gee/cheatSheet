@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.root_header.RoundtripTest" time="9.515" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="org.slf4j.simpleLogger.log.org.apache.maven.repository.internal.DefaultArtifactDescriptorReader" value="ERROR"/>
+    <property name="org.slf4j.simpleLogger.showLogName" value="false"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/test-classes:/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/classes:/home/rapha/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/rapha/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-basicjaxb-runtime/2.2.1/hisrc-basicjaxb-runtime-2.2.1.jar:/home/rapha/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/rapha/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/home/rapha/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/home/rapha/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/rapha/.m2/repository/commons-io/commons-io/2.16.0/commons-io-2.16.0.jar:/home/rapha/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-hyperjaxb-ejb-runtime/2.2.1/hisrc-hyperjaxb-ejb-runtime-2.2.1.jar:/home/rapha/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/home/rapha/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/home/rapha/.m2/repository/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar:/home/rapha/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/home/rapha/.m2/repository/org/slf4j/slf4j-simple/2.0.12/slf4j-simple-2.0.12.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-hyperjaxb-ejb-roundtrip/2.2.1/hisrc-hyperjaxb-ejb-roundtrip-2.2.1.jar:/home/rapha/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/rapha/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/rapha/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/rapha/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-basicjaxb-testing/2.2.1/hisrc-basicjaxb-testing-2.2.1.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/jaxb-xjc/4.0.5/jaxb-xjc-4.0.5.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/xsom/4.0.5/xsom-4.0.5.jar:/home/rapha/.m2/repository/com/sun/xml/bind/external/relaxng-datatype/4.0.5/relaxng-datatype-4.0.5.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/codemodel/4.0.5/codemodel-4.0.5.jar:/home/rapha/.m2/repository/com/sun/xml/bind/external/rngom/4.0.5/rngom-4.0.5.jar:/home/rapha/.m2/repository/com/sun/xml/dtd-parser/dtd-parser/1.5.1/dtd-parser-1.5.1.jar:/home/rapha/.m2/repository/com/sun/istack/istack-commons-tools/4.1.2/istack-commons-tools-4.1.2.jar:/home/rapha/.m2/repository/xmlunit/xmlunit/1.6/xmlunit-1.6.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-hyperjaxb-opt-hibernate/2.2.1/hisrc-hyperjaxb-opt-hibernate-2.2.1.jar:/home/rapha/.m2/repository/io/smallrye/jandex/3.1.7/jandex-3.1.7.jar:/home/rapha/.m2/repository/org/hibernate/orm/hibernate-core/6.4.4.Final/hibernate-core-6.4.4.Final.jar:/home/rapha/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/rapha/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/home/rapha/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/rapha/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/rapha/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/home/rapha/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/rapha/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/rapha/.m2/repository/org/hibernate/orm/hibernate-jcache/6.4.4.Final/hibernate-jcache-6.4.4.Final.jar:/home/rapha/.m2/repository/javax/cache/cache-api/1.0.0/cache-api-1.0.0.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="Europe/Zurich"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="org.slf4j.simpleLogger.showShortLogName" value="false"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/surefire/surefirebooter-20250905000059863_3.jar /mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/surefire 2025-09-05T00-00-58_904-jvmRun1 surefire-20250905000059863_1tmp surefire_0-20250905000059863_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/test-classes:/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/classes:/home/rapha/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/rapha/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-basicjaxb-runtime/2.2.1/hisrc-basicjaxb-runtime-2.2.1.jar:/home/rapha/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/rapha/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/home/rapha/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/home/rapha/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/rapha/.m2/repository/commons-io/commons-io/2.16.0/commons-io-2.16.0.jar:/home/rapha/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-hyperjaxb-ejb-runtime/2.2.1/hisrc-hyperjaxb-ejb-runtime-2.2.1.jar:/home/rapha/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/home/rapha/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/home/rapha/.m2/repository/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar:/home/rapha/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/home/rapha/.m2/repository/org/slf4j/slf4j-simple/2.0.12/slf4j-simple-2.0.12.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-hyperjaxb-ejb-roundtrip/2.2.1/hisrc-hyperjaxb-ejb-roundtrip-2.2.1.jar:/home/rapha/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/rapha/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/rapha/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/rapha/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-basicjaxb-testing/2.2.1/hisrc-basicjaxb-testing-2.2.1.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/jaxb-xjc/4.0.5/jaxb-xjc-4.0.5.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/xsom/4.0.5/xsom-4.0.5.jar:/home/rapha/.m2/repository/com/sun/xml/bind/external/relaxng-datatype/4.0.5/relaxng-datatype-4.0.5.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/codemodel/4.0.5/codemodel-4.0.5.jar:/home/rapha/.m2/repository/com/sun/xml/bind/external/rngom/4.0.5/rngom-4.0.5.jar:/home/rapha/.m2/repository/com/sun/xml/dtd-parser/dtd-parser/1.5.1/dtd-parser-1.5.1.jar:/home/rapha/.m2/repository/com/sun/istack/istack-commons-tools/4.1.2/istack-commons-tools-4.1.2.jar:/home/rapha/.m2/repository/xmlunit/xmlunit/1.6/xmlunit-1.6.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-hyperjaxb-opt-hibernate/2.2.1/hisrc-hyperjaxb-opt-hibernate-2.2.1.jar:/home/rapha/.m2/repository/io/smallrye/jandex/3.1.7/jandex-3.1.7.jar:/home/rapha/.m2/repository/org/hibernate/orm/hibernate-core/6.4.4.Final/hibernate-core-6.4.4.Final.jar:/home/rapha/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/rapha/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/home/rapha/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/rapha/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/rapha/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/home/rapha/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/rapha/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/rapha/.m2/repository/org/hibernate/orm/hibernate-jcache/6.4.4.Final/hibernate-jcache-6.4.4.Final.jar:/home/rapha/.m2/repository/javax/cache/cache-api/1.0.0/cache-api-1.0.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/rapha"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="org.jvnet.hyperjaxb.persistencePropertiesMoreFile" value="persistence-h2.properties"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="org.jvnet.hyperjaxb.persistencePropertiesBaseFile" value="persistence.properties"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="org.jvnet.hyperjaxb.todoLogLevel" value="DEBUG"/>
+    <property name="surefire.real.class.path" value="/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/surefire/surefirebooter-20250905000059863_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.8+9-Ubuntu-0ubuntu124.04.1"/>
+    <property name="user.name" value="rapha"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.6.87.2-microsoft-standard-WSL2"/>
+    <property name="org.slf4j.simpleLogger.log.org.codehaus.mojo.exec.ExecJavaMojo" value="ERROR"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/rapha/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="21.0.8"/>
+    <property name="user.dir" value="/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="org.jvnet.hyperjaxb.persistence" value="hibernate"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="21.0.8+9-Ubuntu-0ubuntu124.04.1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testSamples" classname="org.example.root_header.RoundtripTest" time="9.392">
+    <system-out><![CDATA[00:01:00:759 INFO EMF: Detected [file:/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/classes/META-INF/persistence.xml].
+00:01:00:770 DEBUG Loading entity manager factory properties.
+00:01:00:771 INFO EMF: Loading [file:/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/classes/persistence.properties].
+00:01:00:774 DEBUG Loading more entity manager factory properties.
+00:01:00:774 INFO EMF: Loading [file:/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/classes/persistence-h2.properties].
+00:01:09:288 DEBUG alter table if exists ejb_samples_root_header.ACQUISITION_TYPE drop constraint if exists FKhe6763sgy0jhb2b4mg23wp2kt
+00:01:09:298 DEBUG alter table if exists ejb_samples_root_header.DATA_BLOCK drop constraint if exists FKf5mr6acopkld12jbfm9t9ht27
+00:01:09:298 DEBUG alter table if exists ejb_samples_root_header.DATA_BLOCK drop constraint if exists FKckhxtiih27amee5wqxxwn9j9y
+00:01:09:298 DEBUG alter table if exists ejb_samples_root_header.DATA_BLOCK drop constraint if exists FK35qtove3j1yujgk9g0m5ugqsh
+00:01:09:299 DEBUG alter table if exists ejb_samples_root_header.DUMP_TYPE drop constraint if exists FKox99pbo4flp6fcpqxps4qy65m
+00:01:09:299 DEBUG alter table if exists ejb_samples_root_header.ROOT drop constraint if exists FKjhtfcfr964elrmcnm9uafv4y
+00:01:09:299 DEBUG drop table if exists ejb_samples_root_header.ACQUISITION_TYPE cascade
+00:01:09:301 DEBUG drop table if exists ejb_samples_root_header.DATA_BLOCK cascade
+00:01:09:301 DEBUG drop table if exists ejb_samples_root_header.DUMP_TYPE cascade
+00:01:09:301 DEBUG drop table if exists ejb_samples_root_header.HEADER_TYPE cascade
+00:01:09:301 DEBUG drop table if exists ejb_samples_root_header.LIST_OF_ACQUISITIONS cascade
+00:01:09:301 DEBUG drop table if exists ejb_samples_root_header.LIST_OF_DUMPS cascade
+00:01:09:302 DEBUG drop table if exists ejb_samples_root_header.ROOT cascade
+00:01:09:302 DEBUG create table ejb_samples_root_header.ACQUISITION_TYPE (ACQUISITION_LIST_OF_ACQUISIT_0 bigint, HJID bigserial not null, ACQUISITION_ID varchar(255), primary key (HJID))
+00:01:09:320 DEBUG create table ejb_samples_root_header.DATA_BLOCK (DATA_BLOCK_ROOT_HJID bigint, HJID bigserial not null, LIST_OF_ACQUISITIONS_DATA_BL_0 bigint, LIST_OF_DUMPS_DATA_BLOCK_HJID bigint, SENSING_START_TIME varchar(255), SENSING_STOP_TIME varchar(255), TYPE_ varchar(255), primary key (HJID))
+00:01:09:321 DEBUG create table ejb_samples_root_header.DUMP_TYPE (DUMP_LIST_OF_DUMPS_HJID bigint, HJID bigserial not null, DUMP_ID varchar(255), primary key (HJID))
+00:01:09:322 DEBUG create table ejb_samples_root_header.HEADER_TYPE (HJID bigserial not null, HEADER_ID varchar(255), primary key (HJID))
+00:01:09:323 DEBUG create table ejb_samples_root_header.LIST_OF_ACQUISITIONS (COUNT_ integer, HJID bigserial not null, primary key (HJID))
+00:01:09:324 DEBUG create table ejb_samples_root_header.LIST_OF_DUMPS (HJID bigserial not null, COUNT_ varchar(255), primary key (HJID))
+00:01:09:327 DEBUG create table ejb_samples_root_header.ROOT (HEADER_ROOT_HJID bigint unique, HJID bigserial not null, NAME_ varchar(255), primary key (HJID))
+00:01:09:329 DEBUG alter table if exists ejb_samples_root_header.ACQUISITION_TYPE add constraint FKhe6763sgy0jhb2b4mg23wp2kt foreign key (ACQUISITION_LIST_OF_ACQUISIT_0) references ejb_samples_root_header.LIST_OF_ACQUISITIONS
+00:01:09:358 DEBUG alter table if exists ejb_samples_root_header.DATA_BLOCK add constraint FKf5mr6acopkld12jbfm9t9ht27 foreign key (LIST_OF_ACQUISITIONS_DATA_BL_0) references ejb_samples_root_header.LIST_OF_ACQUISITIONS
+00:01:09:360 DEBUG alter table if exists ejb_samples_root_header.DATA_BLOCK add constraint FKckhxtiih27amee5wqxxwn9j9y foreign key (LIST_OF_DUMPS_DATA_BLOCK_HJID) references ejb_samples_root_header.LIST_OF_DUMPS
+00:01:09:361 DEBUG alter table if exists ejb_samples_root_header.DATA_BLOCK add constraint FK35qtove3j1yujgk9g0m5ugqsh foreign key (DATA_BLOCK_ROOT_HJID) references ejb_samples_root_header.ROOT
+00:01:09:362 DEBUG alter table if exists ejb_samples_root_header.DUMP_TYPE add constraint FKox99pbo4flp6fcpqxps4qy65m foreign key (DUMP_LIST_OF_DUMPS_HJID) references ejb_samples_root_header.LIST_OF_DUMPS
+00:01:09:363 DEBUG alter table if exists ejb_samples_root_header.ROOT add constraint FKjhtfcfr964elrmcnm9uafv4y foreign key (HEADER_ROOT_HJID) references ejb_samples_root_header.HEADER_TYPE
+00:01:09:376 DEBUG Testing samples, start
+00:01:09:377 INFO Testing directory [/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/src/test/samples].
+00:01:09:409 DEBUG Testing sample, start [root-header-01.xml].
+00:01:09:555 DEBUG Unmarshalling sample.
+00:01:09:575 DEBUG Unmarshalling etalon.
+00:01:09:612 TRACE Etalon object:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ROOT xmlns="http://example.org/root_header">
+    <Header Header_Id="HDR001"/>
+    <name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <Data_Block type="DB001">
+        <Sensing_Start_Time>2024-05-01T09:45:15.000Z</Sensing_Start_Time>
+        <Sensing_Stop_Time>2024-05-01T12:45:15.000Z</Sensing_Stop_Time>
+        <List_of_Acquisitions count="2">
+            <Acquisition Acquisition_Id="ACQ001"/>
+            <Acquisition Acquisition_Id="ACQ002"/>
+        </List_of_Acquisitions>
+        <List_Of_Dumps count="2">
+            <Dump Dump_Id="DMP001"/>
+            <Dump Dump_Id="DMP002"/>
+        </List_Of_Dumps>
+    </Data_Block>
+</ROOT>
+
+00:01:09:612 DEBUG Persisting the unmarshalled sample.
+00:01:09:801 DEBUG insert into ejb_samples_root_header.HEADER_TYPE (HEADER_ID) values (?)
+00:01:09:873 DEBUG insert into ejb_samples_root_header.ROOT (HEADER_ROOT_HJID,NAME_) values (?,?)
+00:01:09:876 DEBUG insert into ejb_samples_root_header.LIST_OF_ACQUISITIONS (COUNT_) values (?)
+00:01:09:876 DEBUG insert into ejb_samples_root_header.ACQUISITION_TYPE (ACQUISITION_ID) values (?)
+00:01:09:877 DEBUG insert into ejb_samples_root_header.ACQUISITION_TYPE (ACQUISITION_ID) values (?)
+00:01:09:878 DEBUG insert into ejb_samples_root_header.LIST_OF_DUMPS (COUNT_) values (?)
+00:01:09:878 DEBUG insert into ejb_samples_root_header.DUMP_TYPE (DUMP_ID) values (?)
+00:01:09:879 DEBUG insert into ejb_samples_root_header.DUMP_TYPE (DUMP_ID) values (?)
+00:01:09:880 DEBUG insert into ejb_samples_root_header.DATA_BLOCK (LIST_OF_ACQUISITIONS_DATA_BL_0,LIST_OF_DUMPS_DATA_BLOCK_HJID,SENSING_START_TIME,SENSING_STOP_TIME,TYPE_) values (?,?,?,?,?)
+00:01:09:919 DEBUG update ejb_samples_root_header.DATA_BLOCK set DATA_BLOCK_ROOT_HJID=? where HJID=?
+00:01:09:927 DEBUG update ejb_samples_root_header.ACQUISITION_TYPE set ACQUISITION_LIST_OF_ACQUISIT_0=? where HJID=?
+00:01:09:928 DEBUG update ejb_samples_root_header.ACQUISITION_TYPE set ACQUISITION_LIST_OF_ACQUISIT_0=? where HJID=?
+00:01:09:929 DEBUG update ejb_samples_root_header.DUMP_TYPE set DUMP_LIST_OF_DUMPS_HJID=? where HJID=?
+00:01:09:929 DEBUG update ejb_samples_root_header.DUMP_TYPE set DUMP_LIST_OF_DUMPS_HJID=? where HJID=?
+00:01:09:941 TRACE Saved object:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ROOT Hjid="1" xmlns="http://example.org/root_header">
+    <Header Header_Id="HDR001" Hjid="1"/>
+    <name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <Data_Block type="DB001" Hjid="1">
+        <Sensing_Start_Time>2024-05-01T09:45:15.000Z</Sensing_Start_Time>
+        <Sensing_Stop_Time>2024-05-01T12:45:15.000Z</Sensing_Stop_Time>
+        <List_of_Acquisitions count="2" Hjid="1">
+            <Acquisition Acquisition_Id="ACQ001" Hjid="1"/>
+            <Acquisition Acquisition_Id="ACQ002" Hjid="2"/>
+        </List_of_Acquisitions>
+        <List_Of_Dumps count="2" Hjid="1">
+            <Dump Dump_Id="DMP001" Hjid="1"/>
+            <Dump Dump_Id="DMP002" Hjid="2"/>
+        </List_Of_Dumps>
+    </Data_Block>
+</ROOT>
+
+00:01:09:945 DEBUG Loading the persisted sample.
+00:01:10:059 DEBUG select r1_0.HJID,h1_0.HJID,h1_0.HEADER_ID,r1_0.NAME_,db1_0.DATA_BLOCK_ROOT_HJID,db1_0.HJID,loa1_0.HJID,loa1_0.COUNT_,lod1_0.HJID,lod1_0.COUNT_,db1_0.SENSING_START_TIME,db1_0.SENSING_STOP_TIME,db1_0.TYPE_ from ejb_samples_root_header.ROOT r1_0 left join ejb_samples_root_header.HEADER_TYPE h1_0 on h1_0.HJID=r1_0.HEADER_ROOT_HJID left join ejb_samples_root_header.DATA_BLOCK db1_0 on r1_0.HJID=db1_0.DATA_BLOCK_ROOT_HJID left join ejb_samples_root_header.LIST_OF_ACQUISITIONS loa1_0 on loa1_0.HJID=db1_0.LIST_OF_ACQUISITIONS_DATA_BL_0 left join ejb_samples_root_header.LIST_OF_DUMPS lod1_0 on lod1_0.HJID=db1_0.LIST_OF_DUMPS_DATA_BLOCK_HJID where r1_0.HJID=?
+00:01:10:087 DEBUG select d1_0.DUMP_LIST_OF_DUMPS_HJID,d1_0.HJID,d1_0.DUMP_ID from ejb_samples_root_header.DUMP_TYPE d1_0 where d1_0.DUMP_LIST_OF_DUMPS_HJID=?
+00:01:10:088 DEBUG select a1_0.ACQUISITION_LIST_OF_ACQUISIT_0,a1_0.HJID,a1_0.ACQUISITION_ID from ejb_samples_root_header.ACQUISITION_TYPE a1_0 where a1_0.ACQUISITION_LIST_OF_ACQUISIT_0=?
+00:01:10:091 TRACE Loaded object:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ROOT Hjid="1" xmlns="http://example.org/root_header">
+    <Header Header_Id="HDR001" Hjid="1"/>
+    <name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <Data_Block type="DB001" Hjid="1">
+        <Sensing_Start_Time>2024-05-01T09:45:15.000Z</Sensing_Start_Time>
+        <Sensing_Stop_Time>2024-05-01T12:45:15.000Z</Sensing_Stop_Time>
+        <List_of_Acquisitions count="2" Hjid="1">
+            <Acquisition Acquisition_Id="ACQ001" Hjid="1"/>
+            <Acquisition Acquisition_Id="ACQ002" Hjid="2"/>
+        </List_of_Acquisitions>
+        <List_Of_Dumps count="2" Hjid="1">
+            <Dump Dump_Id="DMP001" Hjid="1"/>
+            <Dump Dump_Id="DMP002" Hjid="2"/>
+        </List_Of_Dumps>
+    </Data_Block>
+</ROOT>
+
+00:01:10:091 DEBUG Checking the sample object identity: Etalon vs Loaded.
+00:01:10:108 DEBUG Checking the sample object identity: Etalon vs Etalon clone.
+00:01:10:109 TRACE Checking the sample object identity: Loaded vs Loaded clone.
+00:01:10:109 TRACE Checking the sample object identity: Etalon vs Initial vs Loaded.
+00:01:10:111 INFO Testing sample, SUCCESS [root-header-01.xml].
+00:01:10:111 DEBUG Testing samples, finish
+]]></system-out>
+  </testcase>
+</testsuite>

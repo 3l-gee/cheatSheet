@@ -1,0 +1,13 @@
+create table ejb_samples_root_header.ACQUISITION_TYPE (ACQUISITION_LIST_OF_ACQUISIT_0 bigint, HJID bigserial not null, ACQUISITION_ID varchar(255), primary key (HJID));
+create table ejb_samples_root_header.DATA_BLOCK (DATA_BLOCK_ROOT_HJID bigint, HJID bigserial not null, LIST_OF_ACQUISITIONS_DATA_BL_0 bigint, LIST_OF_DUMPS_DATA_BLOCK_HJID bigint, SENSING_START_TIME varchar(255), SENSING_STOP_TIME varchar(255), TYPE_ varchar(255), primary key (HJID));
+create table ejb_samples_root_header.DUMP_TYPE (DUMP_LIST_OF_DUMPS_HJID bigint, HJID bigserial not null, DUMP_ID varchar(255), primary key (HJID));
+create table ejb_samples_root_header.HEADER_TYPE (HJID bigserial not null, HEADER_ID varchar(255), primary key (HJID));
+create table ejb_samples_root_header.LIST_OF_ACQUISITIONS (COUNT_ integer, HJID bigserial not null, primary key (HJID));
+create table ejb_samples_root_header.LIST_OF_DUMPS (HJID bigserial not null, COUNT_ varchar(255), primary key (HJID));
+create table ejb_samples_root_header.ROOT (HEADER_ROOT_HJID bigint unique, HJID bigserial not null, NAME_ varchar(255), primary key (HJID));
+alter table if exists ejb_samples_root_header.ACQUISITION_TYPE add constraint FKhe6763sgy0jhb2b4mg23wp2kt foreign key (ACQUISITION_LIST_OF_ACQUISIT_0) references ejb_samples_root_header.LIST_OF_ACQUISITIONS;
+alter table if exists ejb_samples_root_header.DATA_BLOCK add constraint FKf5mr6acopkld12jbfm9t9ht27 foreign key (LIST_OF_ACQUISITIONS_DATA_BL_0) references ejb_samples_root_header.LIST_OF_ACQUISITIONS;
+alter table if exists ejb_samples_root_header.DATA_BLOCK add constraint FKckhxtiih27amee5wqxxwn9j9y foreign key (LIST_OF_DUMPS_DATA_BLOCK_HJID) references ejb_samples_root_header.LIST_OF_DUMPS;
+alter table if exists ejb_samples_root_header.DATA_BLOCK add constraint FK35qtove3j1yujgk9g0m5ugqsh foreign key (DATA_BLOCK_ROOT_HJID) references ejb_samples_root_header.ROOT;
+alter table if exists ejb_samples_root_header.DUMP_TYPE add constraint FKox99pbo4flp6fcpqxps4qy65m foreign key (DUMP_LIST_OF_DUMPS_HJID) references ejb_samples_root_header.LIST_OF_DUMPS;
+alter table if exists ejb_samples_root_header.ROOT add constraint FKjhtfcfr964elrmcnm9uafv4y foreign key (HEADER_ROOT_HJID) references ejb_samples_root_header.HEADER_TYPE;
