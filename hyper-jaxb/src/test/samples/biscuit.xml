@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipeBook xmlns="http://example.org/biscuits">
+	
+	<recipe difficulty="EASY" created="2025-09-01T10:00:00" updated="2025-09-05T09:15:00">
+		<title>Classic Chocolate Biscuits</title>
+		
+		<ingredients>
+			<name>Flour</name>
+			<amount unit="g">250</amount>
+			<allergens>GLUTEN EGGS</allergens>
+		</ingredients>
+		<ingredients>
+			<name>Butter</name>
+			<amount unit="g">100</amount>
+			<allergens>MILK</allergens>
+		</ingredients>
+		<ingredients>
+			<name>Cocoa Powder</name>
+			<amount unit="g">50</amount>
+		</ingredients>
+		
+		<sweetener>
+			<sugar unit="g">80</sugar>
+		</sweetener>
+		
+		<steps stepNumber="1">
+			<instruction>Sift flour and cocoa together.</instruction>
+			<duration>5</duration>
+		</steps>
+		<steps stepNumber="2">
+			<instruction>Mix with butter until crumbly.</instruction>
+		</steps>
+		<steps stepNumber="3">
+			<instruction>Bake until crisp.</instruction>
+			<duration>15</duration>
+		</steps>
+		
+		<tray material="metal">
+			<length>30</length>
+			<width>20</width>
+		</tray>
+		
+		<chocolateBiscuit shape="ROUND" flour="WHEAT">
+			<cocoaContent>70</cocoaContent>
+		</chocolateBiscuit>
+		
+		<recipeNotes language="en">Use a firm jam to avoid soggy centers.</recipeNotes>
+		<biscuitNotes language="en">Cut a small vent in the top to prevent bubbling.</biscuitNotes>
+	</recipe>
+	
+	<recipe difficulty="MEDIUM" created="2025-09-02T14:30:00" updated="2025-09-06T12:00:00">
+		<title>Jam-Filled Biscuits</title>
+		
+		<ingredients>
+			<name>Flour</name>
+			<amount unit="g">200</amount>
+			<allergens>GLUTEN</allergens>
+		</ingredients>
+		<ingredients>
+			<name>Butter</name>
+			<amount unit="g">120</amount>
+			<allergens>MILK</allergens>
+		</ingredients>
+		<ingredients>
+			<name>Strawberry Jam</name>
+			<amount unit="tbsp">3</amount>
+		</ingredients>
+		
+		<sweetener>
+			<honey unit="ml">50</honey>
+		</sweetener>
+		
+		<steps stepNumber="1">
+			<instruction>Mix flour and butter into dough.</instruction>
+		</steps>
+		<steps stepNumber="2">
+			<instruction>Roll out and cut shapes.</instruction>
+		</steps>
+		<steps stepNumber="3">
+			<instruction>Add jam filling and bake.</instruction>
+			<duration>other:untilGolden</duration>
+		</steps>
+		
+		<tray material="ceramic">
+			<length>25</length>
+			<width>25</width>
+		</tray>
+		
+		<jamBiscuit shape="HEART" flour="RYE">
+			<jamFlavor>Strawberry</jamFlavor>
+		</jamBiscuit>
+		
+		<recipeNotes language="en">Keep dough chilled 30 minutes before rolling.</recipeNotes>
+		<biscuitNotes language="en">Store in an airtight container; best eaten within 3 days.</biscuitNotes>
+	</recipe>
+		
+</recipeBook>

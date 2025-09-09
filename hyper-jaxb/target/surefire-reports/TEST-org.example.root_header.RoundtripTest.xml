@@ -1,186 +1,467 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.root_header.RoundtripTest" time="9.515" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.root_header.RoundtripTest" time="2.796" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="org.slf4j.simpleLogger.log.org.apache.maven.repository.internal.DefaultArtifactDescriptorReader" value="ERROR"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
     <property name="org.slf4j.simpleLogger.showLogName" value="false"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/test-classes:/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/classes:/home/rapha/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/rapha/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-basicjaxb-runtime/2.2.1/hisrc-basicjaxb-runtime-2.2.1.jar:/home/rapha/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/rapha/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/home/rapha/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/home/rapha/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/rapha/.m2/repository/commons-io/commons-io/2.16.0/commons-io-2.16.0.jar:/home/rapha/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-hyperjaxb-ejb-runtime/2.2.1/hisrc-hyperjaxb-ejb-runtime-2.2.1.jar:/home/rapha/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/home/rapha/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/home/rapha/.m2/repository/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar:/home/rapha/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/home/rapha/.m2/repository/org/slf4j/slf4j-simple/2.0.12/slf4j-simple-2.0.12.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-hyperjaxb-ejb-roundtrip/2.2.1/hisrc-hyperjaxb-ejb-roundtrip-2.2.1.jar:/home/rapha/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/rapha/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/rapha/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/rapha/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-basicjaxb-testing/2.2.1/hisrc-basicjaxb-testing-2.2.1.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/jaxb-xjc/4.0.5/jaxb-xjc-4.0.5.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/xsom/4.0.5/xsom-4.0.5.jar:/home/rapha/.m2/repository/com/sun/xml/bind/external/relaxng-datatype/4.0.5/relaxng-datatype-4.0.5.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/codemodel/4.0.5/codemodel-4.0.5.jar:/home/rapha/.m2/repository/com/sun/xml/bind/external/rngom/4.0.5/rngom-4.0.5.jar:/home/rapha/.m2/repository/com/sun/xml/dtd-parser/dtd-parser/1.5.1/dtd-parser-1.5.1.jar:/home/rapha/.m2/repository/com/sun/istack/istack-commons-tools/4.1.2/istack-commons-tools-4.1.2.jar:/home/rapha/.m2/repository/xmlunit/xmlunit/1.6/xmlunit-1.6.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-hyperjaxb-opt-hibernate/2.2.1/hisrc-hyperjaxb-opt-hibernate-2.2.1.jar:/home/rapha/.m2/repository/io/smallrye/jandex/3.1.7/jandex-3.1.7.jar:/home/rapha/.m2/repository/org/hibernate/orm/hibernate-core/6.4.4.Final/hibernate-core-6.4.4.Final.jar:/home/rapha/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/rapha/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/home/rapha/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/rapha/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/rapha/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/home/rapha/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/rapha/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/rapha/.m2/repository/org/hibernate/orm/hibernate-jcache/6.4.4.Final/hibernate-jcache-6.4.4.Final.jar:/home/rapha/.m2/repository/javax/cache/cache-api/1.0.0/cache-api-1.0.0.jar:"/>
-    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\gerth\source\repos\3l-gee\cheatSheet\hyper-jaxb\target\test-classes;C:\Users\gerth\source\repos\3l-gee\cheatSheet\hyper-jaxb\target\classes;C:\Users\gerth\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\gerth\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-basicjaxb-runtime\2.2.1\hisrc-basicjaxb-runtime-2.2.1.jar;C:\Users\gerth\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\gerth\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\gerth\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\gerth\.m2\repository\commons-io\commons-io\2.16.0\commons-io-2.16.0.jar;C:\Users\gerth\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-hyperjaxb-ejb-runtime\2.2.1\hisrc-hyperjaxb-ejb-runtime-2.2.1.jar;C:\Users\gerth\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\gerth\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\gerth\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\gerth\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\gerth\.m2\repository\org\slf4j\slf4j-simple\2.0.12\slf4j-simple-2.0.12.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-hyperjaxb-ejb-roundtrip\2.2.1\hisrc-hyperjaxb-ejb-roundtrip-2.2.1.jar;C:\Users\gerth\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\gerth\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\gerth\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\gerth\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-basicjaxb-testing\2.2.1\hisrc-basicjaxb-testing-2.2.1.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\jaxb-xjc\4.0.5\jaxb-xjc-4.0.5.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\xsom\4.0.5\xsom-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\xml\bind\external\relaxng-datatype\4.0.5\relaxng-datatype-4.0.5.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\codemodel\4.0.5\codemodel-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\xml\bind\external\rngom\4.0.5\rngom-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\xml\dtd-parser\dtd-parser\1.5.1\dtd-parser-1.5.1.jar;C:\Users\gerth\.m2\repository\com\sun\istack\istack-commons-tools\4.1.2\istack-commons-tools-4.1.2.jar;C:\Users\gerth\.m2\repository\xmlunit\xmlunit\1.6\xmlunit-1.6.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-hyperjaxb-opt-hibernate\2.2.1\hisrc-hyperjaxb-opt-hibernate-2.2.1.jar;C:\Users\gerth\.m2\repository\io\smallrye\jandex\3.1.7\jandex-3.1.7.jar;C:\Users\gerth\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\gerth\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\gerth\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\gerth\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\gerth\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\gerth\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\gerth\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\gerth\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\gerth\.m2\repository\org\hibernate\orm\hibernate-jcache\6.4.4.Final\hibernate-jcache-6.4.4.Final.jar;C:\Users\gerth\.m2\repository\javax\cache\cache-api\1.0.0\cache-api-1.0.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Europe/Zurich"/>
     <property name="org.jboss.logging.provider" value="slf4j"/>
-    <property name="os.name" value="Linux"/>
+    <property name="user.country.format" value="150"/>
     <property name="java.vm.specification.version" value="21"/>
+    <property name="os.name" value="Windows 11"/>
     <property name="org.slf4j.simpleLogger.showShortLogName" value="false"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/surefire/surefirebooter-20250905000059863_3.jar /mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/surefire 2025-09-05T00-00-58_904-jvmRun1 surefire-20250905000059863_1tmp surefire_0-20250905000059863_2tmp"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\gerth\AppData\Local\Temp\surefire18249598579083747129\surefirebooter-20250909163629550_3.jar C:\Users\gerth\AppData\Local\Temp\surefire18249598579083747129 2025-09-09T16-36-29_441-jvmRun1 surefire-20250909163629550_1tmp surefire_0-20250909163629550_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/test-classes:/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/classes:/home/rapha/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/rapha/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-basicjaxb-runtime/2.2.1/hisrc-basicjaxb-runtime-2.2.1.jar:/home/rapha/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/rapha/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/home/rapha/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/home/rapha/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/rapha/.m2/repository/commons-io/commons-io/2.16.0/commons-io-2.16.0.jar:/home/rapha/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-hyperjaxb-ejb-runtime/2.2.1/hisrc-hyperjaxb-ejb-runtime-2.2.1.jar:/home/rapha/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/home/rapha/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/home/rapha/.m2/repository/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar:/home/rapha/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/home/rapha/.m2/repository/org/slf4j/slf4j-simple/2.0.12/slf4j-simple-2.0.12.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-hyperjaxb-ejb-roundtrip/2.2.1/hisrc-hyperjaxb-ejb-roundtrip-2.2.1.jar:/home/rapha/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/rapha/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/rapha/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/rapha/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-basicjaxb-testing/2.2.1/hisrc-basicjaxb-testing-2.2.1.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/jaxb-xjc/4.0.5/jaxb-xjc-4.0.5.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/xsom/4.0.5/xsom-4.0.5.jar:/home/rapha/.m2/repository/com/sun/xml/bind/external/relaxng-datatype/4.0.5/relaxng-datatype-4.0.5.jar:/home/rapha/.m2/repository/org/glassfish/jaxb/codemodel/4.0.5/codemodel-4.0.5.jar:/home/rapha/.m2/repository/com/sun/xml/bind/external/rngom/4.0.5/rngom-4.0.5.jar:/home/rapha/.m2/repository/com/sun/xml/dtd-parser/dtd-parser/1.5.1/dtd-parser-1.5.1.jar:/home/rapha/.m2/repository/com/sun/istack/istack-commons-tools/4.1.2/istack-commons-tools-4.1.2.jar:/home/rapha/.m2/repository/xmlunit/xmlunit/1.6/xmlunit-1.6.jar:/home/rapha/.m2/repository/org/patrodyne/jvnet/hisrc-hyperjaxb-opt-hibernate/2.2.1/hisrc-hyperjaxb-opt-hibernate-2.2.1.jar:/home/rapha/.m2/repository/io/smallrye/jandex/3.1.7/jandex-3.1.7.jar:/home/rapha/.m2/repository/org/hibernate/orm/hibernate-core/6.4.4.Final/hibernate-core-6.4.4.Final.jar:/home/rapha/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/rapha/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/home/rapha/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/rapha/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/rapha/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/home/rapha/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/rapha/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/rapha/.m2/repository/org/hibernate/orm/hibernate-jcache/6.4.4.Final/hibernate-jcache-6.4.4.Final.jar:/home/rapha/.m2/repository/javax/cache/cache-api/1.0.0/cache-api-1.0.0.jar:"/>
+    <property name="surefire.test.class.path" value="C:\Users\gerth\source\repos\3l-gee\cheatSheet\hyper-jaxb\target\test-classes;C:\Users\gerth\source\repos\3l-gee\cheatSheet\hyper-jaxb\target\classes;C:\Users\gerth\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\gerth\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-basicjaxb-runtime\2.2.1\hisrc-basicjaxb-runtime-2.2.1.jar;C:\Users\gerth\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\gerth\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\gerth\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\gerth\.m2\repository\commons-io\commons-io\2.16.0\commons-io-2.16.0.jar;C:\Users\gerth\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-hyperjaxb-ejb-runtime\2.2.1\hisrc-hyperjaxb-ejb-runtime-2.2.1.jar;C:\Users\gerth\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\gerth\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\gerth\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\gerth\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\gerth\.m2\repository\org\slf4j\slf4j-simple\2.0.12\slf4j-simple-2.0.12.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-hyperjaxb-ejb-roundtrip\2.2.1\hisrc-hyperjaxb-ejb-roundtrip-2.2.1.jar;C:\Users\gerth\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\gerth\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\gerth\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\gerth\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-basicjaxb-testing\2.2.1\hisrc-basicjaxb-testing-2.2.1.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\jaxb-xjc\4.0.5\jaxb-xjc-4.0.5.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\xsom\4.0.5\xsom-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\xml\bind\external\relaxng-datatype\4.0.5\relaxng-datatype-4.0.5.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\codemodel\4.0.5\codemodel-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\xml\bind\external\rngom\4.0.5\rngom-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\xml\dtd-parser\dtd-parser\1.5.1\dtd-parser-1.5.1.jar;C:\Users\gerth\.m2\repository\com\sun\istack\istack-commons-tools\4.1.2\istack-commons-tools-4.1.2.jar;C:\Users\gerth\.m2\repository\xmlunit\xmlunit\1.6\xmlunit-1.6.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-hyperjaxb-opt-hibernate\2.2.1\hisrc-hyperjaxb-opt-hibernate-2.2.1.jar;C:\Users\gerth\.m2\repository\io\smallrye\jandex\3.1.7\jandex-3.1.7.jar;C:\Users\gerth\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\gerth\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\gerth\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\gerth\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\gerth\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\gerth\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\gerth\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\gerth\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\gerth\.m2\repository\org\hibernate\orm\hibernate-jcache\6.4.4.Final\hibernate-jcache-6.4.4.Final.jar;C:\Users\gerth\.m2\repository\javax\cache\cache-api\1.0.0\cache-api-1.0.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/home/rapha"/>
+    <property name="user.home" value="C:\Users\gerth"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2025-07-15"/>
-    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
-    <property name="org.jvnet.hyperjaxb.persistencePropertiesMoreFile" value="persistence-h2.properties"/>
-    <property name="file.separator" value="/"/>
-    <property name="basedir" value="/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="org.jvnet.hyperjaxb.persistencePropertiesMoreFile" value="persistence-pg.properties"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\gerth\source\repos\3l-gee\cheatSheet\hyper-jaxb"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="org.jvnet.hyperjaxb.persistencePropertiesBaseFile" value="persistence.properties"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="org.jvnet.hyperjaxb.todoLogLevel" value="DEBUG"/>
-    <property name="surefire.real.class.path" value="/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/surefire/surefirebooter-20250905000059863_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\gerth\AppData\Local\Temp\surefire18249598579083747129\surefirebooter-20250909163629550_3.jar"/>
+    <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="21.0.8+9-Ubuntu-0ubuntu124.04.1"/>
-    <property name="user.name" value="rapha"/>
-    <property name="stdout.encoding" value="UTF-8"/>
-    <property name="path.separator" value=":"/>
-    <property name="os.version" value="6.6.87.2-microsoft-standard-WSL2"/>
+    <property name="java.runtime.version" value="21.0.3+7-LTS-152"/>
+    <property name="user.name" value="gerth"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
     <property name="org.slf4j.simpleLogger.log.org.codehaus.mojo.exec.ExecJavaMojo" value="ERROR"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="localRepository" value="/home/rapha/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
-    <property name="java.version" value="21.0.8"/>
-    <property name="user.dir" value="/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\gerth\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\gerth\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.3"/>
+    <property name="user.dir" value="C:\Users\gerth\source\repos\3l-gee\cheatSheet\hyper-jaxb"/>
     <property name="os.arch" value="amd64"/>
     <property name="org.jvnet.hyperjaxb.persistence" value="hibernate"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="native.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
-    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Users\gerth\AppData\Local\Programs\Python\Python311;C:\Program Files\Eclipse Adoptium\jre-8.0.322.6-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Graphviz\bin;C:\ProgramData\chocolatey\bin;C:\Users\gerth\AppData\Local\Programs\Python\Python311\Scripts;C:\Program Files\QGIS 3.28.3;C:\Program Files\Apache\maven\apache-maven-3.9.8\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\wget;C:\Program Files (x86)\Kaspersky Lab\KES.12.9.0\;C:\Program Files\xidel-0.9.8.win32;C:\Users\LokalerAdmin\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\LokalerAdmin\AppData\Local\nvm;C:\Users\LokalerAdmin\AppData\Local\nvm\v22.12.0;C:\Users\gerth\AppData\Local\Programs\Python\Launcher\;C:\Users\gerth\.cargo\bin;C:\Users\gerth\AppData\Local\Microsoft\WindowsApps;C:\Users\gerth\AppData\Local\Programs\Git\cmd;C:\Users\gerth\AppData\Local\Programs\Microsoft VS Code\bin;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.vendor" value="Ubuntu"/>
-    <property name="java.vm.version" value="21.0.8+9-Ubuntu-0ubuntu124.04.1"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.3+7-LTS-152"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testSamples" classname="org.example.root_header.RoundtripTest" time="9.392">
-    <system-out><![CDATA[00:01:00:759 INFO EMF: Detected [file:/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/classes/META-INF/persistence.xml].
-00:01:00:770 DEBUG Loading entity manager factory properties.
-00:01:00:771 INFO EMF: Loading [file:/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/classes/persistence.properties].
-00:01:00:774 DEBUG Loading more entity manager factory properties.
-00:01:00:774 INFO EMF: Loading [file:/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/target/classes/persistence-h2.properties].
-00:01:09:288 DEBUG alter table if exists ejb_samples_root_header.ACQUISITION_TYPE drop constraint if exists FKhe6763sgy0jhb2b4mg23wp2kt
-00:01:09:298 DEBUG alter table if exists ejb_samples_root_header.DATA_BLOCK drop constraint if exists FKf5mr6acopkld12jbfm9t9ht27
-00:01:09:298 DEBUG alter table if exists ejb_samples_root_header.DATA_BLOCK drop constraint if exists FKckhxtiih27amee5wqxxwn9j9y
-00:01:09:298 DEBUG alter table if exists ejb_samples_root_header.DATA_BLOCK drop constraint if exists FK35qtove3j1yujgk9g0m5ugqsh
-00:01:09:299 DEBUG alter table if exists ejb_samples_root_header.DUMP_TYPE drop constraint if exists FKox99pbo4flp6fcpqxps4qy65m
-00:01:09:299 DEBUG alter table if exists ejb_samples_root_header.ROOT drop constraint if exists FKjhtfcfr964elrmcnm9uafv4y
-00:01:09:299 DEBUG drop table if exists ejb_samples_root_header.ACQUISITION_TYPE cascade
-00:01:09:301 DEBUG drop table if exists ejb_samples_root_header.DATA_BLOCK cascade
-00:01:09:301 DEBUG drop table if exists ejb_samples_root_header.DUMP_TYPE cascade
-00:01:09:301 DEBUG drop table if exists ejb_samples_root_header.HEADER_TYPE cascade
-00:01:09:301 DEBUG drop table if exists ejb_samples_root_header.LIST_OF_ACQUISITIONS cascade
-00:01:09:301 DEBUG drop table if exists ejb_samples_root_header.LIST_OF_DUMPS cascade
-00:01:09:302 DEBUG drop table if exists ejb_samples_root_header.ROOT cascade
-00:01:09:302 DEBUG create table ejb_samples_root_header.ACQUISITION_TYPE (ACQUISITION_LIST_OF_ACQUISIT_0 bigint, HJID bigserial not null, ACQUISITION_ID varchar(255), primary key (HJID))
-00:01:09:320 DEBUG create table ejb_samples_root_header.DATA_BLOCK (DATA_BLOCK_ROOT_HJID bigint, HJID bigserial not null, LIST_OF_ACQUISITIONS_DATA_BL_0 bigint, LIST_OF_DUMPS_DATA_BLOCK_HJID bigint, SENSING_START_TIME varchar(255), SENSING_STOP_TIME varchar(255), TYPE_ varchar(255), primary key (HJID))
-00:01:09:321 DEBUG create table ejb_samples_root_header.DUMP_TYPE (DUMP_LIST_OF_DUMPS_HJID bigint, HJID bigserial not null, DUMP_ID varchar(255), primary key (HJID))
-00:01:09:322 DEBUG create table ejb_samples_root_header.HEADER_TYPE (HJID bigserial not null, HEADER_ID varchar(255), primary key (HJID))
-00:01:09:323 DEBUG create table ejb_samples_root_header.LIST_OF_ACQUISITIONS (COUNT_ integer, HJID bigserial not null, primary key (HJID))
-00:01:09:324 DEBUG create table ejb_samples_root_header.LIST_OF_DUMPS (HJID bigserial not null, COUNT_ varchar(255), primary key (HJID))
-00:01:09:327 DEBUG create table ejb_samples_root_header.ROOT (HEADER_ROOT_HJID bigint unique, HJID bigserial not null, NAME_ varchar(255), primary key (HJID))
-00:01:09:329 DEBUG alter table if exists ejb_samples_root_header.ACQUISITION_TYPE add constraint FKhe6763sgy0jhb2b4mg23wp2kt foreign key (ACQUISITION_LIST_OF_ACQUISIT_0) references ejb_samples_root_header.LIST_OF_ACQUISITIONS
-00:01:09:358 DEBUG alter table if exists ejb_samples_root_header.DATA_BLOCK add constraint FKf5mr6acopkld12jbfm9t9ht27 foreign key (LIST_OF_ACQUISITIONS_DATA_BL_0) references ejb_samples_root_header.LIST_OF_ACQUISITIONS
-00:01:09:360 DEBUG alter table if exists ejb_samples_root_header.DATA_BLOCK add constraint FKckhxtiih27amee5wqxxwn9j9y foreign key (LIST_OF_DUMPS_DATA_BLOCK_HJID) references ejb_samples_root_header.LIST_OF_DUMPS
-00:01:09:361 DEBUG alter table if exists ejb_samples_root_header.DATA_BLOCK add constraint FK35qtove3j1yujgk9g0m5ugqsh foreign key (DATA_BLOCK_ROOT_HJID) references ejb_samples_root_header.ROOT
-00:01:09:362 DEBUG alter table if exists ejb_samples_root_header.DUMP_TYPE add constraint FKox99pbo4flp6fcpqxps4qy65m foreign key (DUMP_LIST_OF_DUMPS_HJID) references ejb_samples_root_header.LIST_OF_DUMPS
-00:01:09:363 DEBUG alter table if exists ejb_samples_root_header.ROOT add constraint FKjhtfcfr964elrmcnm9uafv4y foreign key (HEADER_ROOT_HJID) references ejb_samples_root_header.HEADER_TYPE
-00:01:09:376 DEBUG Testing samples, start
-00:01:09:377 INFO Testing directory [/mnt/c/Users/rapha/Documents/project/hisrc-hyperjaxb-ejb-sample-root-header-2.2.1/src/test/samples].
-00:01:09:409 DEBUG Testing sample, start [root-header-01.xml].
-00:01:09:555 DEBUG Unmarshalling sample.
-00:01:09:575 DEBUG Unmarshalling etalon.
-00:01:09:612 TRACE Etalon object:
+  <testcase name="testSamples" classname="org.example.root_header.RoundtripTest" time="2.782">
+    <system-out><![CDATA[16:36:30:160 INFO EMF: Detected [file:/C:/Users/gerth/source/repos/3l-gee/cheatSheet/hyper-jaxb/target/classes/META-INF/persistence.xml].
+16:36:30:160 DEBUG Loading entity manager factory properties.
+16:36:30:160 INFO EMF: Loading [file:/C:/Users/gerth/source/repos/3l-gee/cheatSheet/hyper-jaxb/target/classes/persistence.properties].
+16:36:30:160 DEBUG Loading more entity manager factory properties.
+16:36:30:160 INFO EMF: Loading [file:/C:/Users/gerth/source/repos/3l-gee/cheatSheet/hyper-jaxb/target/classes/persistence-pg.properties].
+16:36:32:341 DEBUG alter table if exists biscuit.CHOCOLATE_BISCUIT drop constraint if exists FKem5l6wplur6i9e92w1gir8r1h
+16:36:32:347 DEBUG alter table if exists biscuit.INGREDIENTS drop constraint if exists FKkwvyfj2a2elwkjd2jx2857odi
+16:36:32:347 DEBUG alter table if exists biscuit.INGREDIENTS drop constraint if exists FKawft386hlelp4l698eb8l3tn3
+16:36:32:347 DEBUG alter table if exists biscuit.INGREDIENTS_ALLERGENS drop constraint if exists FKmrhiuvvlnlojhqdk02u1mlt47
+16:36:32:347 DEBUG alter table if exists biscuit.JAM_BISCUIT drop constraint if exists FK38bgt6wl6h6kknq4mv3ubgdkc
+16:36:32:347 DEBUG alter table if exists biscuit.RECIPE drop constraint if exists FKe83r6pn3b7n78iq42gig826jq
+16:36:32:347 DEBUG alter table if exists biscuit.RECIPE drop constraint if exists FKh81jk38oyypitabc2ofxh4lkc
+16:36:32:347 DEBUG alter table if exists biscuit.RECIPE drop constraint if exists FK97dy4i4dab1dbapni5my5vfw3
+16:36:32:347 DEBUG alter table if exists biscuit.RECIPE drop constraint if exists FKtecmlbqu44kmvfvtdgcrlbjwt
+16:36:32:347 DEBUG alter table if exists biscuit.RECIPE drop constraint if exists FK8ykfpbgxw1falcb68dtp5pvqd
+16:36:32:347 DEBUG alter table if exists biscuit.RECIPE drop constraint if exists FKptrj77pdotcqbb9egn1a4wst0
+16:36:32:347 DEBUG alter table if exists biscuit.RECIPE_STEP drop constraint if exists FK77fa6nclm2jd8lr8mb1et24cl
+16:36:32:347 DEBUG alter table if exists biscuit.SWEETENER_CHOICE drop constraint if exists FKsmp44vgytmxs7f3pi8q59uwot
+16:36:32:347 DEBUG alter table if exists biscuit.SWEETENER_CHOICE drop constraint if exists FK5ts950wfqqqlpr5ox2q6lpri4
+16:36:32:347 DEBUG alter table if exists biscuit.SWEETENER_CHOICE drop constraint if exists FKd8cohloqiyg60hhgvg9fu9cy0
+16:36:32:347 DEBUG drop table if exists biscuit.ABSTRACT_BISCUIT cascade
+16:36:32:379 DEBUG drop table if exists biscuit.CHOCOLATE_BISCUIT cascade
+16:36:32:383 DEBUG drop table if exists biscuit.INGREDIENT_AMOUNT cascade
+16:36:32:383 DEBUG drop table if exists biscuit.INGREDIENTS cascade
+16:36:32:395 DEBUG drop table if exists biscuit.INGREDIENTS_ALLERGENS cascade
+16:36:32:395 DEBUG drop table if exists biscuit.JAM_BISCUIT cascade
+16:36:32:412 DEBUG drop table if exists biscuit.NOTES cascade
+16:36:32:423 DEBUG drop table if exists biscuit.RECIPE cascade
+16:36:32:426 DEBUG drop table if exists biscuit.RECIPE_BOOK cascade
+16:36:32:426 DEBUG drop table if exists biscuit.RECIPE_STEP cascade
+16:36:32:441 DEBUG drop table if exists biscuit.SWEETENER_CHOICE cascade
+16:36:32:441 DEBUG drop table if exists biscuit.TRAY_TYPE cascade
+16:36:32:457 DEBUG create table biscuit.ABSTRACT_BISCUIT (HJID bigserial not null, FLOUR varchar(255) check (FLOUR in ('WHEAT','RYE','OAT','CORN','GLUTEN_FREE')), SHAPE varchar(255) check (SHAPE in ('ROUND','SQUARE','STAR','HEART')), primary key (HJID))
+16:36:32:473 DEBUG create table biscuit.CHOCOLATE_BISCUIT (COCOA_CONTENT integer, HJID bigint not null, primary key (HJID))
+16:36:32:484 DEBUG create table biscuit.INGREDIENT_AMOUNT (VALUE_ numeric(20,10), HJID bigserial not null, UNIT varchar(255), primary key (HJID))
+16:36:32:489 DEBUG create table biscuit.INGREDIENTS (AMOUNT_INGREDIENTS_HJID bigint, HJID bigserial not null, INGREDIENTS_RECIPE_HJID bigint, NAME_ varchar(255), primary key (HJID))
+16:36:32:489 DEBUG create table biscuit.INGREDIENTS_ALLERGENS (HJINDEX integer not null, HJID bigint not null, HJVALUE varchar(255), primary key (HJINDEX, HJID))
+16:36:32:489 DEBUG create table biscuit.JAM_BISCUIT (HJID bigint not null, JAM_FLAVOR varchar(255), primary key (HJID))
+16:36:32:505 DEBUG create table biscuit.NOTES (HJID bigserial not null, LANGUAGE_ varchar(255), VALUE_ varchar(255), primary key (HJID))
+16:36:32:514 DEBUG create table biscuit.RECIPE (BISCUIT_NOTES_ITEM_RECIPE_HJ_0 bigint, BISCUIT_VALUE_RECIPE_HJID bigint, CREATED_ITEM timestamp(6), HJID bigserial not null, RECIPE_NOTES_ITEM_RECIPE_HJID bigint, RECIPE_RECIPE_BOOK_HJID bigint, SWEETENER_RECIPE_HJID bigint, TRAY_RECIPE_HJID bigint, UPDATED_ITEM timestamp(6), BISCUIT_NAME varchar(255), DIFFICULTY varchar(255), TITLE varchar(255), primary key (HJID))
+16:36:32:523 DEBUG create table biscuit.RECIPE_BOOK (HJID bigserial not null, primary key (HJID))
+16:36:32:527 DEBUG create table biscuit.RECIPE_STEP (STEP_NUMBER integer, HJID bigserial not null, STEPS_RECIPE_HJID bigint, DURATION varchar(255), INSTRUCTION varchar(255), primary key (HJID))
+16:36:32:536 DEBUG create table biscuit.SWEETENER_CHOICE (HJID bigserial not null, HONEY_SWEETENER_CHOICE_HJID bigint, SUGAR_SWEETENER_CHOICE_HJID bigint, SYRUP_SWEETENER_CHOICE_HJID bigint, primary key (HJID))
+16:36:32:542 DEBUG create table biscuit.TRAY_TYPE (LENGTH_ numeric(20,10), WIDTH numeric(20,10), HJID bigserial not null, MATERIAL varchar(255), primary key (HJID))
+16:36:32:547 DEBUG alter table if exists biscuit.CHOCOLATE_BISCUIT add constraint FKem5l6wplur6i9e92w1gir8r1h foreign key (HJID) references biscuit.ABSTRACT_BISCUIT
+16:36:32:548 DEBUG alter table if exists biscuit.INGREDIENTS add constraint FKkwvyfj2a2elwkjd2jx2857odi foreign key (AMOUNT_INGREDIENTS_HJID) references biscuit.INGREDIENT_AMOUNT
+16:36:32:549 DEBUG alter table if exists biscuit.INGREDIENTS add constraint FKawft386hlelp4l698eb8l3tn3 foreign key (INGREDIENTS_RECIPE_HJID) references biscuit.RECIPE
+16:36:32:549 DEBUG alter table if exists biscuit.INGREDIENTS_ALLERGENS add constraint FKmrhiuvvlnlojhqdk02u1mlt47 foreign key (HJID) references biscuit.INGREDIENTS
+16:36:32:549 DEBUG alter table if exists biscuit.JAM_BISCUIT add constraint FK38bgt6wl6h6kknq4mv3ubgdkc foreign key (HJID) references biscuit.ABSTRACT_BISCUIT
+16:36:32:549 DEBUG alter table if exists biscuit.RECIPE add constraint FKe83r6pn3b7n78iq42gig826jq foreign key (BISCUIT_NOTES_ITEM_RECIPE_HJ_0) references biscuit.NOTES
+16:36:32:549 DEBUG alter table if exists biscuit.RECIPE add constraint FKh81jk38oyypitabc2ofxh4lkc foreign key (BISCUIT_VALUE_RECIPE_HJID) references biscuit.ABSTRACT_BISCUIT
+16:36:32:549 DEBUG alter table if exists biscuit.RECIPE add constraint FK97dy4i4dab1dbapni5my5vfw3 foreign key (RECIPE_NOTES_ITEM_RECIPE_HJID) references biscuit.NOTES
+16:36:32:549 DEBUG alter table if exists biscuit.RECIPE add constraint FKtecmlbqu44kmvfvtdgcrlbjwt foreign key (SWEETENER_RECIPE_HJID) references biscuit.SWEETENER_CHOICE
+16:36:32:549 DEBUG alter table if exists biscuit.RECIPE add constraint FK8ykfpbgxw1falcb68dtp5pvqd foreign key (TRAY_RECIPE_HJID) references biscuit.TRAY_TYPE
+16:36:32:549 DEBUG alter table if exists biscuit.RECIPE add constraint FKptrj77pdotcqbb9egn1a4wst0 foreign key (RECIPE_RECIPE_BOOK_HJID) references biscuit.RECIPE_BOOK
+16:36:32:549 DEBUG alter table if exists biscuit.RECIPE_STEP add constraint FK77fa6nclm2jd8lr8mb1et24cl foreign key (STEPS_RECIPE_HJID) references biscuit.RECIPE
+16:36:32:549 DEBUG alter table if exists biscuit.SWEETENER_CHOICE add constraint FKsmp44vgytmxs7f3pi8q59uwot foreign key (HONEY_SWEETENER_CHOICE_HJID) references biscuit.INGREDIENT_AMOUNT
+16:36:32:549 DEBUG alter table if exists biscuit.SWEETENER_CHOICE add constraint FK5ts950wfqqqlpr5ox2q6lpri4 foreign key (SUGAR_SWEETENER_CHOICE_HJID) references biscuit.INGREDIENT_AMOUNT
+16:36:32:549 DEBUG alter table if exists biscuit.SWEETENER_CHOICE add constraint FKd8cohloqiyg60hhgvg9fu9cy0 foreign key (SYRUP_SWEETENER_CHOICE_HJID) references biscuit.INGREDIENT_AMOUNT
+16:36:32:569 DEBUG Testing samples, start
+16:36:32:569 INFO Testing directory [C:\Users\gerth\source\repos\3l-gee\cheatSheet\hyper-jaxb\src\test\samples].
+16:36:32:569 DEBUG Testing sample, start [biscuit.xml].
+16:36:32:659 DEBUG Unmarshalling sample.
+16:36:32:660 DEBUG Unmarshalling etalon.
+16:36:32:694 TRACE Etalon object:
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ROOT xmlns="http://example.org/root_header">
-    <Header Header_Id="HDR001"/>
-    <name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-    <Data_Block type="DB001">
-        <Sensing_Start_Time>2024-05-01T09:45:15.000Z</Sensing_Start_Time>
-        <Sensing_Stop_Time>2024-05-01T12:45:15.000Z</Sensing_Stop_Time>
-        <List_of_Acquisitions count="2">
-            <Acquisition Acquisition_Id="ACQ001"/>
-            <Acquisition Acquisition_Id="ACQ002"/>
-        </List_of_Acquisitions>
-        <List_Of_Dumps count="2">
-            <Dump Dump_Id="DMP001"/>
-            <Dump Dump_Id="DMP002"/>
-        </List_Of_Dumps>
-    </Data_Block>
-</ROOT>
+<recipeBook xmlns="http://example.org/biscuits">
+    <recipe difficulty="EASY" created="2025-09-01T10:00:00" updated="2025-09-05T09:15:00">
+        <title>Classic Chocolate Biscuits</title>
+        <ingredients>
+            <name>Flour</name>
+            <amount unit="g">250</amount>
+            <allergens>GLUTEN EGGS</allergens>
+        </ingredients>
+        <ingredients>
+            <name>Butter</name>
+            <amount unit="g">100</amount>
+            <allergens>MILK</allergens>
+        </ingredients>
+        <ingredients>
+            <name>Cocoa Powder</name>
+            <amount unit="g">50</amount>
+        </ingredients>
+        <sweetener>
+            <sugar unit="g">80</sugar>
+        </sweetener>
+        <steps stepNumber="1">
+            <instruction>Sift flour and cocoa together.</instruction>
+            <duration>5</duration>
+        </steps>
+        <steps stepNumber="2">
+            <instruction>Mix with butter until crumbly.</instruction>
+        </steps>
+        <steps stepNumber="3">
+            <instruction>Bake until crisp.</instruction>
+            <duration>15</duration>
+        </steps>
+        <tray material="metal">
+            <length>30</length>
+            <width>20</width>
+        </tray>
+        <chocolateBiscuit shape="ROUND" flour="WHEAT">
+            <cocoaContent>70</cocoaContent>
+        </chocolateBiscuit>
+        <recipeNotes language="en">Use a firm jam to avoid soggy centers.</recipeNotes>
+        <biscuitNotes language="en">Cut a small vent in the top to prevent bubbling.</biscuitNotes>
+    </recipe>
+    <recipe difficulty="MEDIUM" created="2025-09-02T14:30:00" updated="2025-09-06T12:00:00">
+        <title>Jam-Filled Biscuits</title>
+        <ingredients>
+            <name>Flour</name>
+            <amount unit="g">200</amount>
+            <allergens>GLUTEN</allergens>
+        </ingredients>
+        <ingredients>
+            <name>Butter</name>
+            <amount unit="g">120</amount>
+            <allergens>MILK</allergens>
+        </ingredients>
+        <ingredients>
+            <name>Strawberry Jam</name>
+            <amount unit="tbsp">3</amount>
+        </ingredients>
+        <sweetener>
+            <honey unit="ml">50</honey>
+        </sweetener>
+        <steps stepNumber="1">
+            <instruction>Mix flour and butter into dough.</instruction>
+        </steps>
+        <steps stepNumber="2">
+            <instruction>Roll out and cut shapes.</instruction>
+        </steps>
+        <steps stepNumber="3">
+            <instruction>Add jam filling and bake.</instruction>
+            <duration>other:untilGolden</duration>
+        </steps>
+        <tray material="ceramic">
+            <length>25</length>
+            <width>25</width>
+        </tray>
+        <jamBiscuit shape="HEART" flour="RYE">
+            <jamFlavor>Strawberry</jamFlavor>
+        </jamBiscuit>
+        <recipeNotes language="en">Keep dough chilled 30 minutes before rolling.</recipeNotes>
+        <biscuitNotes language="en">Store in an airtight container; best eaten within 3 days.</biscuitNotes>
+    </recipe>
+</recipeBook>
 
-00:01:09:612 DEBUG Persisting the unmarshalled sample.
-00:01:09:801 DEBUG insert into ejb_samples_root_header.HEADER_TYPE (HEADER_ID) values (?)
-00:01:09:873 DEBUG insert into ejb_samples_root_header.ROOT (HEADER_ROOT_HJID,NAME_) values (?,?)
-00:01:09:876 DEBUG insert into ejb_samples_root_header.LIST_OF_ACQUISITIONS (COUNT_) values (?)
-00:01:09:876 DEBUG insert into ejb_samples_root_header.ACQUISITION_TYPE (ACQUISITION_ID) values (?)
-00:01:09:877 DEBUG insert into ejb_samples_root_header.ACQUISITION_TYPE (ACQUISITION_ID) values (?)
-00:01:09:878 DEBUG insert into ejb_samples_root_header.LIST_OF_DUMPS (COUNT_) values (?)
-00:01:09:878 DEBUG insert into ejb_samples_root_header.DUMP_TYPE (DUMP_ID) values (?)
-00:01:09:879 DEBUG insert into ejb_samples_root_header.DUMP_TYPE (DUMP_ID) values (?)
-00:01:09:880 DEBUG insert into ejb_samples_root_header.DATA_BLOCK (LIST_OF_ACQUISITIONS_DATA_BL_0,LIST_OF_DUMPS_DATA_BLOCK_HJID,SENSING_START_TIME,SENSING_STOP_TIME,TYPE_) values (?,?,?,?,?)
-00:01:09:919 DEBUG update ejb_samples_root_header.DATA_BLOCK set DATA_BLOCK_ROOT_HJID=? where HJID=?
-00:01:09:927 DEBUG update ejb_samples_root_header.ACQUISITION_TYPE set ACQUISITION_LIST_OF_ACQUISIT_0=? where HJID=?
-00:01:09:928 DEBUG update ejb_samples_root_header.ACQUISITION_TYPE set ACQUISITION_LIST_OF_ACQUISIT_0=? where HJID=?
-00:01:09:929 DEBUG update ejb_samples_root_header.DUMP_TYPE set DUMP_LIST_OF_DUMPS_HJID=? where HJID=?
-00:01:09:929 DEBUG update ejb_samples_root_header.DUMP_TYPE set DUMP_LIST_OF_DUMPS_HJID=? where HJID=?
-00:01:09:941 TRACE Saved object:
+16:36:32:694 DEBUG Persisting the unmarshalled sample.
+16:36:32:753 DEBUG insert into biscuit.RECIPE_BOOK default values
+16:36:32:753 DEBUG insert into biscuit.NOTES (LANGUAGE_,VALUE_) values (?,?)
+16:36:32:769 DEBUG insert into biscuit.ABSTRACT_BISCUIT (FLOUR,SHAPE) values (?,?)
+16:36:32:769 DEBUG insert into biscuit.CHOCOLATE_BISCUIT (COCOA_CONTENT,HJID) values (?,?)
+16:36:32:769 DEBUG insert into biscuit.NOTES (LANGUAGE_,VALUE_) values (?,?)
+16:36:32:778 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+16:36:32:778 DEBUG insert into biscuit.SWEETENER_CHOICE (HONEY_SWEETENER_CHOICE_HJID,SUGAR_SWEETENER_CHOICE_HJID,SYRUP_SWEETENER_CHOICE_HJID) values (?,?,?)
+16:36:32:784 DEBUG insert into biscuit.TRAY_TYPE (LENGTH_,MATERIAL,WIDTH) values (?,?,?)
+16:36:32:793 DEBUG insert into biscuit.RECIPE (BISCUIT_NAME,BISCUIT_NOTES_ITEM_RECIPE_HJ_0,BISCUIT_VALUE_RECIPE_HJID,CREATED_ITEM,DIFFICULTY,RECIPE_NOTES_ITEM_RECIPE_HJID,SWEETENER_RECIPE_HJID,TITLE,TRAY_RECIPE_HJID,UPDATED_ITEM) values (?,?,?,?,?,?,?,?,?,?)
+16:36:32:793 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+16:36:32:793 DEBUG insert into biscuit.INGREDIENTS (AMOUNT_INGREDIENTS_HJID,NAME_) values (?,?)
+16:36:32:801 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+16:36:32:801 DEBUG insert into biscuit.INGREDIENTS (AMOUNT_INGREDIENTS_HJID,NAME_) values (?,?)
+16:36:32:801 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+16:36:32:801 DEBUG insert into biscuit.INGREDIENTS (AMOUNT_INGREDIENTS_HJID,NAME_) values (?,?)
+16:36:32:801 DEBUG insert into biscuit.RECIPE_STEP (DURATION,INSTRUCTION,STEP_NUMBER) values (?,?,?)
+16:36:32:801 DEBUG insert into biscuit.RECIPE_STEP (DURATION,INSTRUCTION,STEP_NUMBER) values (?,?,?)
+16:36:32:801 DEBUG insert into biscuit.RECIPE_STEP (DURATION,INSTRUCTION,STEP_NUMBER) values (?,?,?)
+16:36:32:801 DEBUG insert into biscuit.NOTES (LANGUAGE_,VALUE_) values (?,?)
+16:36:32:801 DEBUG insert into biscuit.ABSTRACT_BISCUIT (FLOUR,SHAPE) values (?,?)
+16:36:32:801 DEBUG insert into biscuit.JAM_BISCUIT (JAM_FLAVOR,HJID) values (?,?)
+16:36:32:801 DEBUG insert into biscuit.NOTES (LANGUAGE_,VALUE_) values (?,?)
+16:36:32:801 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+16:36:32:801 DEBUG insert into biscuit.SWEETENER_CHOICE (HONEY_SWEETENER_CHOICE_HJID,SUGAR_SWEETENER_CHOICE_HJID,SYRUP_SWEETENER_CHOICE_HJID) values (?,?,?)
+16:36:32:801 DEBUG insert into biscuit.TRAY_TYPE (LENGTH_,MATERIAL,WIDTH) values (?,?,?)
+16:36:32:801 DEBUG insert into biscuit.RECIPE (BISCUIT_NAME,BISCUIT_NOTES_ITEM_RECIPE_HJ_0,BISCUIT_VALUE_RECIPE_HJID,CREATED_ITEM,DIFFICULTY,RECIPE_NOTES_ITEM_RECIPE_HJID,SWEETENER_RECIPE_HJID,TITLE,TRAY_RECIPE_HJID,UPDATED_ITEM) values (?,?,?,?,?,?,?,?,?,?)
+16:36:32:801 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+16:36:32:801 DEBUG insert into biscuit.INGREDIENTS (AMOUNT_INGREDIENTS_HJID,NAME_) values (?,?)
+16:36:32:801 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+16:36:32:817 DEBUG insert into biscuit.INGREDIENTS (AMOUNT_INGREDIENTS_HJID,NAME_) values (?,?)
+16:36:32:817 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+16:36:32:819 DEBUG insert into biscuit.INGREDIENTS (AMOUNT_INGREDIENTS_HJID,NAME_) values (?,?)
+16:36:32:819 DEBUG insert into biscuit.RECIPE_STEP (DURATION,INSTRUCTION,STEP_NUMBER) values (?,?,?)
+16:36:32:821 DEBUG insert into biscuit.RECIPE_STEP (DURATION,INSTRUCTION,STEP_NUMBER) values (?,?,?)
+16:36:32:821 DEBUG insert into biscuit.RECIPE_STEP (DURATION,INSTRUCTION,STEP_NUMBER) values (?,?,?)
+16:36:32:837 DEBUG update biscuit.RECIPE set RECIPE_RECIPE_BOOK_HJID=? where HJID=?
+16:36:32:839 DEBUG update biscuit.RECIPE set RECIPE_RECIPE_BOOK_HJID=? where HJID=?
+16:36:32:840 DEBUG update biscuit.INGREDIENTS set INGREDIENTS_RECIPE_HJID=? where HJID=?
+16:36:32:841 DEBUG update biscuit.INGREDIENTS set INGREDIENTS_RECIPE_HJID=? where HJID=?
+16:36:32:841 DEBUG update biscuit.INGREDIENTS set INGREDIENTS_RECIPE_HJID=? where HJID=?
+16:36:32:842 DEBUG update biscuit.RECIPE_STEP set STEPS_RECIPE_HJID=? where HJID=?
+16:36:32:842 DEBUG update biscuit.RECIPE_STEP set STEPS_RECIPE_HJID=? where HJID=?
+16:36:32:842 DEBUG update biscuit.RECIPE_STEP set STEPS_RECIPE_HJID=? where HJID=?
+16:36:32:844 DEBUG insert into biscuit.INGREDIENTS_ALLERGENS (HJID,HJINDEX,HJVALUE) values (?,?,?)
+16:36:32:844 DEBUG insert into biscuit.INGREDIENTS_ALLERGENS (HJID,HJINDEX,HJVALUE) values (?,?,?)
+16:36:32:846 DEBUG insert into biscuit.INGREDIENTS_ALLERGENS (HJID,HJINDEX,HJVALUE) values (?,?,?)
+16:36:32:846 DEBUG update biscuit.INGREDIENTS set INGREDIENTS_RECIPE_HJID=? where HJID=?
+16:36:32:846 DEBUG update biscuit.INGREDIENTS set INGREDIENTS_RECIPE_HJID=? where HJID=?
+16:36:32:846 DEBUG update biscuit.INGREDIENTS set INGREDIENTS_RECIPE_HJID=? where HJID=?
+16:36:32:847 DEBUG update biscuit.RECIPE_STEP set STEPS_RECIPE_HJID=? where HJID=?
+16:36:32:847 DEBUG update biscuit.RECIPE_STEP set STEPS_RECIPE_HJID=? where HJID=?
+16:36:32:848 DEBUG update biscuit.RECIPE_STEP set STEPS_RECIPE_HJID=? where HJID=?
+16:36:32:848 DEBUG insert into biscuit.INGREDIENTS_ALLERGENS (HJID,HJINDEX,HJVALUE) values (?,?,?)
+16:36:32:849 DEBUG insert into biscuit.INGREDIENTS_ALLERGENS (HJID,HJINDEX,HJVALUE) values (?,?,?)
+16:36:32:856 TRACE Saved object:
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ROOT Hjid="1" xmlns="http://example.org/root_header">
-    <Header Header_Id="HDR001" Hjid="1"/>
-    <name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-    <Data_Block type="DB001" Hjid="1">
-        <Sensing_Start_Time>2024-05-01T09:45:15.000Z</Sensing_Start_Time>
-        <Sensing_Stop_Time>2024-05-01T12:45:15.000Z</Sensing_Stop_Time>
-        <List_of_Acquisitions count="2" Hjid="1">
-            <Acquisition Acquisition_Id="ACQ001" Hjid="1"/>
-            <Acquisition Acquisition_Id="ACQ002" Hjid="2"/>
-        </List_of_Acquisitions>
-        <List_Of_Dumps count="2" Hjid="1">
-            <Dump Dump_Id="DMP001" Hjid="1"/>
-            <Dump Dump_Id="DMP002" Hjid="2"/>
-        </List_Of_Dumps>
-    </Data_Block>
-</ROOT>
+<recipeBook Hjid="1" xmlns="http://example.org/biscuits">
+    <recipe difficulty="EASY" created="2025-09-01T10:00:00.000" updated="2025-09-05T09:15:00.000" Hjid="1">
+        <title>Classic Chocolate Biscuits</title>
+        <ingredients Hjid="1">
+            <name>Flour</name>
+            <amount unit="g" Hjid="2">250</amount>
+            <allergens>GLUTEN EGGS</allergens>
+        </ingredients>
+        <ingredients Hjid="2">
+            <name>Butter</name>
+            <amount unit="g" Hjid="3">100</amount>
+            <allergens>MILK</allergens>
+        </ingredients>
+        <ingredients Hjid="3">
+            <name>Cocoa Powder</name>
+            <amount unit="g" Hjid="4">50</amount>
+            <allergens></allergens>
+        </ingredients>
+        <sweetener Hjid="1">
+            <sugar unit="g" Hjid="1">80</sugar>
+        </sweetener>
+        <steps stepNumber="1" Hjid="1">
+            <instruction>Sift flour and cocoa together.</instruction>
+            <duration>5</duration>
+        </steps>
+        <steps stepNumber="2" Hjid="2">
+            <instruction>Mix with butter until crumbly.</instruction>
+        </steps>
+        <steps stepNumber="3" Hjid="3">
+            <instruction>Bake until crisp.</instruction>
+            <duration>15</duration>
+        </steps>
+        <tray material="metal" Hjid="1">
+            <length>30</length>
+            <width>20</width>
+        </tray>
+        <chocolateBiscuit shape="ROUND" flour="WHEAT" Hjid="1">
+            <cocoaContent>70</cocoaContent>
+        </chocolateBiscuit>
+        <recipeNotes language="en" Hjid="2">Use a firm jam to avoid soggy centers.</recipeNotes>
+        <biscuitNotes language="en" Hjid="1">Cut a small vent in the top to prevent bubbling.</biscuitNotes>
+    </recipe>
+    <recipe difficulty="MEDIUM" created="2025-09-02T14:30:00.000" updated="2025-09-06T12:00:00.000" Hjid="2">
+        <title>Jam-Filled Biscuits</title>
+        <ingredients Hjid="4">
+            <name>Flour</name>
+            <amount unit="g" Hjid="6">200</amount>
+            <allergens>GLUTEN</allergens>
+        </ingredients>
+        <ingredients Hjid="5">
+            <name>Butter</name>
+            <amount unit="g" Hjid="7">120</amount>
+            <allergens>MILK</allergens>
+        </ingredients>
+        <ingredients Hjid="6">
+            <name>Strawberry Jam</name>
+            <amount unit="tbsp" Hjid="8">3</amount>
+            <allergens></allergens>
+        </ingredients>
+        <sweetener Hjid="2">
+            <honey unit="ml" Hjid="5">50</honey>
+        </sweetener>
+        <steps stepNumber="1" Hjid="4">
+            <instruction>Mix flour and butter into dough.</instruction>
+        </steps>
+        <steps stepNumber="2" Hjid="5">
+            <instruction>Roll out and cut shapes.</instruction>
+        </steps>
+        <steps stepNumber="3" Hjid="6">
+            <instruction>Add jam filling and bake.</instruction>
+            <duration>other:untilGolden</duration>
+        </steps>
+        <tray material="ceramic" Hjid="2">
+            <length>25</length>
+            <width>25</width>
+        </tray>
+        <jamBiscuit shape="HEART" flour="RYE" Hjid="2">
+            <jamFlavor>Strawberry</jamFlavor>
+        </jamBiscuit>
+        <recipeNotes language="en" Hjid="4">Keep dough chilled 30 minutes before rolling.</recipeNotes>
+        <biscuitNotes language="en" Hjid="3">Store in an airtight container; best eaten within 3 days.</biscuitNotes>
+    </recipe>
+</recipeBook>
 
-00:01:09:945 DEBUG Loading the persisted sample.
-00:01:10:059 DEBUG select r1_0.HJID,h1_0.HJID,h1_0.HEADER_ID,r1_0.NAME_,db1_0.DATA_BLOCK_ROOT_HJID,db1_0.HJID,loa1_0.HJID,loa1_0.COUNT_,lod1_0.HJID,lod1_0.COUNT_,db1_0.SENSING_START_TIME,db1_0.SENSING_STOP_TIME,db1_0.TYPE_ from ejb_samples_root_header.ROOT r1_0 left join ejb_samples_root_header.HEADER_TYPE h1_0 on h1_0.HJID=r1_0.HEADER_ROOT_HJID left join ejb_samples_root_header.DATA_BLOCK db1_0 on r1_0.HJID=db1_0.DATA_BLOCK_ROOT_HJID left join ejb_samples_root_header.LIST_OF_ACQUISITIONS loa1_0 on loa1_0.HJID=db1_0.LIST_OF_ACQUISITIONS_DATA_BL_0 left join ejb_samples_root_header.LIST_OF_DUMPS lod1_0 on lod1_0.HJID=db1_0.LIST_OF_DUMPS_DATA_BLOCK_HJID where r1_0.HJID=?
-00:01:10:087 DEBUG select d1_0.DUMP_LIST_OF_DUMPS_HJID,d1_0.HJID,d1_0.DUMP_ID from ejb_samples_root_header.DUMP_TYPE d1_0 where d1_0.DUMP_LIST_OF_DUMPS_HJID=?
-00:01:10:088 DEBUG select a1_0.ACQUISITION_LIST_OF_ACQUISIT_0,a1_0.HJID,a1_0.ACQUISITION_ID from ejb_samples_root_header.ACQUISITION_TYPE a1_0 where a1_0.ACQUISITION_LIST_OF_ACQUISIT_0=?
-00:01:10:091 TRACE Loaded object:
+16:36:32:858 DEBUG Loading the persisted sample.
+16:36:32:878 DEBUG select rb1_0.HJID,r1_0.RECIPE_RECIPE_BOOK_HJID,r1_0.HJID,r1_0.BISCUIT_NAME,bni1_0.HJID,bni1_0.LANGUAGE_,bni1_0.VALUE_,bv1_0.HJID,case when bv1_1.HJID is not null then 1 when bv1_2.HJID is not null then 2 end,bv1_0.FLOUR,bv1_0.SHAPE,bv1_1.COCOA_CONTENT,bv1_2.JAM_FLAVOR,r1_0.CREATED_ITEM,r1_0.DIFFICULTY,rni1_0.HJID,rni1_0.LANGUAGE_,rni1_0.VALUE_,s1_0.HJID,h1_0.HJID,h1_0.UNIT,h1_0.VALUE_,s2_0.HJID,s2_0.UNIT,s2_0.VALUE_,s3_0.HJID,s3_0.UNIT,s3_0.VALUE_,r1_0.TITLE,t1_0.HJID,t1_0.LENGTH_,t1_0.MATERIAL,t1_0.WIDTH,r1_0.UPDATED_ITEM from biscuit.RECIPE_BOOK rb1_0 left join biscuit.RECIPE r1_0 on rb1_0.HJID=r1_0.RECIPE_RECIPE_BOOK_HJID left join biscuit.NOTES bni1_0 on bni1_0.HJID=r1_0.BISCUIT_NOTES_ITEM_RECIPE_HJ_0 left join (biscuit.ABSTRACT_BISCUIT bv1_0 left join biscuit.CHOCOLATE_BISCUIT bv1_1 on bv1_0.HJID=bv1_1.HJID left join biscuit.JAM_BISCUIT bv1_2 on bv1_0.HJID=bv1_2.HJID) on bv1_0.HJID=r1_0.BISCUIT_VALUE_RECIPE_HJID left join biscuit.NOTES rni1_0 on rni1_0.HJID=r1_0.RECIPE_NOTES_ITEM_RECIPE_HJID left join biscuit.SWEETENER_CHOICE s1_0 on s1_0.HJID=r1_0.SWEETENER_RECIPE_HJID left join biscuit.INGREDIENT_AMOUNT h1_0 on h1_0.HJID=s1_0.HONEY_SWEETENER_CHOICE_HJID left join biscuit.INGREDIENT_AMOUNT s2_0 on s2_0.HJID=s1_0.SUGAR_SWEETENER_CHOICE_HJID left join biscuit.INGREDIENT_AMOUNT s3_0 on s3_0.HJID=s1_0.SYRUP_SWEETENER_CHOICE_HJID left join biscuit.TRAY_TYPE t1_0 on t1_0.HJID=r1_0.TRAY_RECIPE_HJID where rb1_0.HJID=?
+16:36:32:884 DEBUG select s1_0.STEPS_RECIPE_HJID,s1_0.HJID,s1_0.DURATION,s1_0.INSTRUCTION,s1_0.STEP_NUMBER from biscuit.RECIPE_STEP s1_0 where s1_0.STEPS_RECIPE_HJID=?
+16:36:32:894 DEBUG select i1_0.INGREDIENTS_RECIPE_HJID,i1_0.HJID,a1_0.HJID,a1_0.UNIT,a1_0.VALUE_,i1_0.NAME_ from biscuit.INGREDIENTS i1_0 left join biscuit.INGREDIENT_AMOUNT a1_0 on a1_0.HJID=i1_0.AMOUNT_INGREDIENTS_HJID where i1_0.INGREDIENTS_RECIPE_HJID=?
+16:36:32:894 DEBUG select s1_0.STEPS_RECIPE_HJID,s1_0.HJID,s1_0.DURATION,s1_0.INSTRUCTION,s1_0.STEP_NUMBER from biscuit.RECIPE_STEP s1_0 where s1_0.STEPS_RECIPE_HJID=?
+16:36:32:894 DEBUG select i1_0.INGREDIENTS_RECIPE_HJID,i1_0.HJID,a1_0.HJID,a1_0.UNIT,a1_0.VALUE_,i1_0.NAME_ from biscuit.INGREDIENTS i1_0 left join biscuit.INGREDIENT_AMOUNT a1_0 on a1_0.HJID=i1_0.AMOUNT_INGREDIENTS_HJID where i1_0.INGREDIENTS_RECIPE_HJID=?
+16:36:32:894 DEBUG select a1_0.HJID,a1_0.HJINDEX,a1_0.HJVALUE from biscuit.INGREDIENTS_ALLERGENS a1_0 where a1_0.HJID=?
+16:36:32:894 DEBUG select a1_0.HJID,a1_0.HJINDEX,a1_0.HJVALUE from biscuit.INGREDIENTS_ALLERGENS a1_0 where a1_0.HJID=?
+16:36:32:894 DEBUG select a1_0.HJID,a1_0.HJINDEX,a1_0.HJVALUE from biscuit.INGREDIENTS_ALLERGENS a1_0 where a1_0.HJID=?
+16:36:32:894 DEBUG select a1_0.HJID,a1_0.HJINDEX,a1_0.HJVALUE from biscuit.INGREDIENTS_ALLERGENS a1_0 where a1_0.HJID=?
+16:36:32:894 DEBUG select a1_0.HJID,a1_0.HJINDEX,a1_0.HJVALUE from biscuit.INGREDIENTS_ALLERGENS a1_0 where a1_0.HJID=?
+16:36:32:894 DEBUG select a1_0.HJID,a1_0.HJINDEX,a1_0.HJVALUE from biscuit.INGREDIENTS_ALLERGENS a1_0 where a1_0.HJID=?
+16:36:32:894 TRACE Loaded object:
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ROOT Hjid="1" xmlns="http://example.org/root_header">
-    <Header Header_Id="HDR001" Hjid="1"/>
-    <name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-    <Data_Block type="DB001" Hjid="1">
-        <Sensing_Start_Time>2024-05-01T09:45:15.000Z</Sensing_Start_Time>
-        <Sensing_Stop_Time>2024-05-01T12:45:15.000Z</Sensing_Stop_Time>
-        <List_of_Acquisitions count="2" Hjid="1">
-            <Acquisition Acquisition_Id="ACQ001" Hjid="1"/>
-            <Acquisition Acquisition_Id="ACQ002" Hjid="2"/>
-        </List_of_Acquisitions>
-        <List_Of_Dumps count="2" Hjid="1">
-            <Dump Dump_Id="DMP001" Hjid="1"/>
-            <Dump Dump_Id="DMP002" Hjid="2"/>
-        </List_Of_Dumps>
-    </Data_Block>
-</ROOT>
+<recipeBook Hjid="1" xmlns="http://example.org/biscuits">
+    <recipe difficulty="EASY" created="2025-09-01T10:00:00.000" updated="2025-09-05T09:15:00.000" Hjid="1">
+        <title>Classic Chocolate Biscuits</title>
+        <ingredients Hjid="1">
+            <name>Flour</name>
+            <amount unit="g" Hjid="2">250.0000000000</amount>
+            <allergens>GLUTEN EGGS</allergens>
+        </ingredients>
+        <ingredients Hjid="2">
+            <name>Butter</name>
+            <amount unit="g" Hjid="3">100.0000000000</amount>
+            <allergens>MILK</allergens>
+        </ingredients>
+        <ingredients Hjid="3">
+            <name>Cocoa Powder</name>
+            <amount unit="g" Hjid="4">50.0000000000</amount>
+            <allergens></allergens>
+        </ingredients>
+        <sweetener Hjid="1">
+            <sugar unit="g" Hjid="1">80.0000000000</sugar>
+        </sweetener>
+        <steps stepNumber="1" Hjid="1">
+            <instruction>Sift flour and cocoa together.</instruction>
+            <duration>5</duration>
+        </steps>
+        <steps stepNumber="2" Hjid="2">
+            <instruction>Mix with butter until crumbly.</instruction>
+        </steps>
+        <steps stepNumber="3" Hjid="3">
+            <instruction>Bake until crisp.</instruction>
+            <duration>15</duration>
+        </steps>
+        <tray material="metal" Hjid="1">
+            <length>30.0000000000</length>
+            <width>20.0000000000</width>
+        </tray>
+        <chocolateBiscuit shape="ROUND" flour="WHEAT" Hjid="1">
+            <cocoaContent>70</cocoaContent>
+        </chocolateBiscuit>
+        <recipeNotes language="en" Hjid="2">Use a firm jam to avoid soggy centers.</recipeNotes>
+        <biscuitNotes language="en" Hjid="1">Cut a small vent in the top to prevent bubbling.</biscuitNotes>
+    </recipe>
+    <recipe difficulty="MEDIUM" created="2025-09-02T14:30:00.000" updated="2025-09-06T12:00:00.000" Hjid="2">
+        <title>Jam-Filled Biscuits</title>
+        <ingredients Hjid="4">
+            <name>Flour</name>
+            <amount unit="g" Hjid="6">200.0000000000</amount>
+            <allergens>GLUTEN</allergens>
+        </ingredients>
+        <ingredients Hjid="5">
+            <name>Butter</name>
+            <amount unit="g" Hjid="7">120.0000000000</amount>
+            <allergens>MILK</allergens>
+        </ingredients>
+        <ingredients Hjid="6">
+            <name>Strawberry Jam</name>
+            <amount unit="tbsp" Hjid="8">3.0000000000</amount>
+            <allergens></allergens>
+        </ingredients>
+        <sweetener Hjid="2">
+            <honey unit="ml" Hjid="5">50.0000000000</honey>
+        </sweetener>
+        <steps stepNumber="1" Hjid="4">
+            <instruction>Mix flour and butter into dough.</instruction>
+        </steps>
+        <steps stepNumber="2" Hjid="5">
+            <instruction>Roll out and cut shapes.</instruction>
+        </steps>
+        <steps stepNumber="3" Hjid="6">
+            <instruction>Add jam filling and bake.</instruction>
+            <duration>other:untilGolden</duration>
+        </steps>
+        <tray material="ceramic" Hjid="2">
+            <length>25.0000000000</length>
+            <width>25.0000000000</width>
+        </tray>
+        <jamBiscuit shape="HEART" flour="RYE" Hjid="2">
+            <jamFlavor>Strawberry</jamFlavor>
+        </jamBiscuit>
+        <recipeNotes language="en" Hjid="4">Keep dough chilled 30 minutes before rolling.</recipeNotes>
+        <biscuitNotes language="en" Hjid="3">Store in an airtight container; best eaten within 3 days.</biscuitNotes>
+    </recipe>
+</recipeBook>
 
-00:01:10:091 DEBUG Checking the sample object identity: Etalon vs Loaded.
-00:01:10:108 DEBUG Checking the sample object identity: Etalon vs Etalon clone.
-00:01:10:109 TRACE Checking the sample object identity: Loaded vs Loaded clone.
-00:01:10:109 TRACE Checking the sample object identity: Etalon vs Initial vs Loaded.
-00:01:10:111 INFO Testing sample, SUCCESS [root-header-01.xml].
-00:01:10:111 DEBUG Testing samples, finish
+16:36:32:894 DEBUG Checking the sample object identity: Etalon vs Loaded.
+16:36:32:905 DEBUG Checking the sample object identity: Etalon vs Etalon clone.
+16:36:32:905 TRACE Checking the sample object identity: Loaded vs Loaded clone.
+16:36:32:905 TRACE Checking the sample object identity: Etalon vs Initial vs Loaded.
+16:36:32:905 INFO Testing sample, SUCCESS [biscuit.xml].
+16:36:32:905 DEBUG Testing samples, finish
 ]]></system-out>
   </testcase>
 </testsuite>

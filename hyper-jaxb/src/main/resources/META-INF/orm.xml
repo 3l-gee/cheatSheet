@@ -6,7 +6,7 @@
 >
 	<persistence-unit-metadata>
 		<persistence-unit-defaults>
-			<schema>ejb_samples_root_header</schema>
+			<schema>biscuit</schema>
 		</persistence-unit-defaults>
 	</persistence-unit-metadata>
 </entity-mappings>

@@ -1,3 +1,5 @@
+> Credit to : https://github.com/patrodyne creator of hisrc-jaxb tools that support generated Java source from XML Schema wich this tutorial has been > addapted from-
+
 # Sample: Root Header, One To One
 
 This Maven project demonstrates the generation of JPA Entities from an XML Schema file (xsd) using the [HiSrc HyperJAXB Maven Plugin][9]. The generated classes include JPA and JAXB annotations to support JDBC persistence and XML marshaling/unmarshaling. Further, it uses [HiSrc BasicJAXB XJC Plugins][10] plugins to add custom `hashCode`, `equals`, and `toString` implementations to each generated entity.
@@ -90,9 +92,9 @@ When successful, each object is *marshaled* for logging and your [review][2].
 A Java standard engine application with a `main(...)` method is at [`org.example.root_header.Main`][42]. This application is executed using:
 
 ~~~
-mvn -Peclipselink clean compile exec:java -Dexec.args="src/test/samples/root-header-01.xml"
+mvn -Peclipselink clean compile exec:java -Dexec.args="src/test/samples/biscuit.xml"
 OR
-mvn -Phibernate   clean compile exec:java -Dexec.args="src/test/samples/root-header-01.xml"
+mvn -Phibernate   clean compile exec:java -Dexec.args="src/test/samples/biscuit.xml"
 ~~~
 
 <!-- References -->
