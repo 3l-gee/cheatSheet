@@ -6,14 +6,7 @@
 	xmlns:orm="https://jakarta.ee/xml/ns/persistence/orm"
 	jaxb:extensionBindingPrefixes="hj orm"
 >
-
-	<!--  Global Bindings
-		* JPA section 2.1, entities must be top-level classes.
-		* JPA section 2.1, entities must implement the serializable interface.
-		* When processing a Microsoft WCF service WSDL, it is recommended that the
-		  generateElementProperty customization be set to 'false' in globalBindings.
-		* Hint: Increase EnumMemberSizeCap above 256 with typesafeEnumMaxMembers="512".
-	-->
+	
 	<jaxb:globalBindings 
 		generateIsSetMethod="true" 
 		localScoping="toplevel"
@@ -40,11 +33,6 @@
 				</orm:cascade>
 			</hj:default-many-to-one>
 		</hj:persistence>
-		<!-- <jaxb:bindings node="//xs:complexType[@name='RecipeNotes']//xs:element[@name='emphasis']">
-			<hj:basic>
-				<orm:column name="EMPHASIS" column-definition="varchar(255)"/>
-			</hj:basic>
-		</jaxb:bindings> -->
 	</jaxb:bindings>
 </jaxb:bindings>
 <!-- vi:set tabstop=4 hardtabs=4 shiftwidth=4 noexpandtab:-->

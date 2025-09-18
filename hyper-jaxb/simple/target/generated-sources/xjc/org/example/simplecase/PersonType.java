@@ -30,18 +30,18 @@ import org.jvnet.basicjaxb.locator.util.LocatorUtils;
 
 
 /**
- * <p>Java class for anonymous complex type</p>.
+ * <p>Java class for PersonType complex type</p>.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>{@code
- * <complexType>
+ * <complexType name="PersonType">
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         <element name="age" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         <element name="title" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         <element name="name" type="{http://example.org/simplecase}NameType"/>
+ *         <element name="age" type="{http://example.org/simplecase}AgeType"/>
+ *         <element name="title" type="{http://example.org/simplecase}TitleType"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -51,14 +51,14 @@ import org.jvnet.basicjaxb.locator.util.LocatorUtils;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
+@XmlType(name = "PersonType", propOrder = {
     "name",
     "age",
     "title"
 })
-@Entity(name = "Person")
-@Table(name = "PERSON")
-public class Person implements Serializable, Equals, HashCode, ToString
+@Entity(name = "PersonType")
+@Table(name = "PERSON_TYPE")
+public class PersonType implements Serializable, Equals, HashCode, ToString
 {
 
     private static final long serialVersionUID = 20250909L;
@@ -211,7 +211,7 @@ public class Person implements Serializable, Equals, HashCode, ToString
         if (this == object) {
             return true;
         }
-        final Person that = ((Person) object);
+        final PersonType that = ((PersonType) object);
         {
             boolean lhsFieldIsSet = this.isSetName();
             boolean rhsFieldIsSet = that.isSetName();

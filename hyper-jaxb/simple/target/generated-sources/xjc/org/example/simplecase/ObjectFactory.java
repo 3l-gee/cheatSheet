@@ -40,13 +40,13 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Person }
+     * Create an instance of {@link PersonType }
      * 
      * @return
-     *     the new instance of {@link Person }
+     *     the new instance of {@link PersonType }
      */
-    public Person createPerson() {
-        return new Person();
+    public PersonType createPersonType() {
+        return new PersonType();
     }
 
 }

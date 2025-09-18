@@ -8,11 +8,11 @@ public class RoundtripTest
 {
     public String getContextPath()
 	{
-        return "org.example.simple";
+        return "org.example.simplecase";
     }
 
     public String getPersistenceUnitName()
 	{
-        return "org.example.simple";
+        return "org.example.simplecase";
     }
 }

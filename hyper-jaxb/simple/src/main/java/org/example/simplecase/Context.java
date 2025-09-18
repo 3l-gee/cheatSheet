@@ -200,5 +200,20 @@ abstract public class Context
 		else
 			getLogger().error("Please create marshaller and unmarshaller!");
     }
+
+	    /**
+     * Marshal a JAXB object instance to an XML file.
+     *
+     * @param instance  The JAXB object (e.g. Group)
+     * @param fileName  The target file path
+     */
+    protected void marshal(Object instance, String fileName) throws JAXBException, IOException {
+        if (instance != null) {
+            File file = new File(fileName);
+            getMarshaller().marshal(instance, file);
+            getLogger().info("Marshalled object {} to {}", instance.getClass().getSimpleName(), file.getAbsolutePath());
+        }
+    }
+
 }
 // vi:set tabstop=4 hardtabs=4 shiftwidth=4:

@@ -54,7 +54,7 @@ public class Main extends Context
         setRoot(peopleList);
 
         // STEP 2: PERSIST - Save each Person in DB
-        for (org.example.simplecase.Person person : peopleList.getPerson()) {
+        for (org.example.simplecase.PersonType person : peopleList.getPerson()) {
             persist(person);
         }
 
@@ -73,7 +73,7 @@ public class Main extends Context
         }
     }
 
-    private void persist(Person person) throws IOException {
+    private void persist(PersonType person) throws IOException {
         Transactional<Integer> tx = (em) -> {
             em.persist(person);
             return 1;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns:tns="http://example.org/simple"
+	xmlns:tns="http://example.org/simplecase"
 	targetNamespace="http://example.org/simplecase"
 	elementFormDefault="qualified"
 	xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
@@ -9,28 +9,43 @@
 	
 	<!-- ================== SIMPLE TYPES ================== -->
 	
+	<xs:simpleType name="NameType">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="255"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="AgeType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="TitleType">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+
 	<!-- ================== COMPLEX TYPES ================= -->
 	
 	<!-- ================== GLOBAL TYPES ================== -->
 		
 	<!-- ================== Class structures ============== -->
+	<xs:complexType name="PersonType">
+		<xs:sequence>
+			<xs:element name="name" type="tns:NameType"/>
+			<xs:element name="age" type="tns:AgeType"/>
+			<xs:element name="title" type="tns:TitleType"/>
+		</xs:sequence>
+	</xs:complexType>
 		
 	<!-- ================== ROOT ================== -->
 	
 	<xs:element name="group">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="person">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="name" type="xs:string"/>
-							<xs:element name="age" type="xs:string"/>
-							<xs:element name="title" type="xs:string"/>
-						</xs:sequence>
-					</xs:complexType>
+				<xs:element name="person" type="tns:PersonType" maxOccurs="unbounded" minOccurs="0"> 
 				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-		
 </xs:schema>

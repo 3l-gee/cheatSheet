@@ -2,6 +2,8 @@
 package org.example.simplecase;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -12,13 +14,12 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.persistence.Transient;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAttribute;
-import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 import org.jvnet.basicjaxb.lang.Equals;
@@ -45,19 +46,7 @@ import org.jvnet.basicjaxb.locator.util.LocatorUtils;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="person">
- *           <complexType>
- *             <complexContent>
- *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 <sequence>
- *                   <element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   <element name="age" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   <element name="title" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                 </sequence>
- *               </restriction>
- *             </complexContent>
- *           </complexType>
- *         </element>
+ *         <element name="person" type="{http://example.org/simplecase}PersonType" maxOccurs="unbounded" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -78,45 +67,58 @@ public class Group implements Serializable, Equals, HashCode, ToString
 {
 
     private static final long serialVersionUID = 20250909L;
-    @XmlElement(required = true)
-    protected Person person;
+    protected List<PersonType> person;
     @XmlAttribute(name = "Hjid")
     protected Long hjid;
 
     /**
      * Gets the value of the person property.
      * 
-     * @return
-     *     possible object is
-     *     {@link Person }
-     *     
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the person property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getPerson().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link PersonType }
+     * 
+     * 
      */
-    @ManyToOne(targetEntity = Person.class, cascade = {
-        CascadeType.DETACH,
-        CascadeType.MERGE,
-        CascadeType.REFRESH,
-        CascadeType.PERSIST
+    @OneToMany(targetEntity = PersonType.class, cascade = {
+        CascadeType.ALL
     }, fetch = FetchType.EAGER)
     @JoinColumn(name = "PERSON_GROUP__HJID")
-    public Person getPerson() {
-        return person;
+    public List<PersonType> getPerson() {
+        if (person == null) {
+            person = new ArrayList<>();
+        }
+        return this.person;
     }
 
     /**
-     * Sets the value of the person property.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Person }
-     *     
+     * 
      */
-    public void setPerson(Person value) {
-        this.person = value;
+    public void setPerson(List<PersonType> person) {
+        this.person = person;
     }
 
     @Transient
     public boolean isSetPerson() {
-        return (this.person!= null);
+        return ((this.person!= null)&&(!this.person.isEmpty()));
+    }
+
+    public void unsetPerson() {
+        this.person = null;
     }
 
     /**
@@ -170,10 +172,10 @@ public class Group implements Serializable, Equals, HashCode, ToString
         {
             boolean lhsFieldIsSet = this.isSetPerson();
             boolean rhsFieldIsSet = that.isSetPerson();
-            Person lhsField;
-            lhsField = this.getPerson();
-            Person rhsField;
-            rhsField = that.getPerson();
+            List<PersonType> lhsField;
+            lhsField = (this.isSetPerson()?this.getPerson():null);
+            List<PersonType> rhsField;
+            rhsField = (that.isSetPerson()?that.getPerson():null);
             ObjectLocator lhsFieldLocator = LocatorUtils.property(thisLocator, "person", lhsField);
             ObjectLocator rhsFieldLocator = LocatorUtils.property(thatLocator, "person", rhsField);
             if (!strategy.equals(lhsFieldLocator, rhsFieldLocator, lhsField, rhsField, lhsFieldIsSet, rhsFieldIsSet)) {
@@ -198,8 +200,8 @@ public class Group implements Serializable, Equals, HashCode, ToString
         int currentHashCode = 1;
         {
             boolean theFieldIsSet = this.isSetPerson();
-            Person theField;
-            theField = this.getPerson();
+            List<PersonType> theField;
+            theField = (this.isSetPerson()?this.getPerson():null);
             ObjectLocator theFieldLocator = LocatorUtils.property(locator, "person", theField);
             currentHashCode = strategy.hashCode(theFieldLocator, currentHashCode, theField, theFieldIsSet);
         }
@@ -230,8 +232,8 @@ public class Group implements Serializable, Equals, HashCode, ToString
     public StringBuilder appendFields(ObjectLocator locator, StringBuilder buffer, ToStringStrategy strategy) {
         {
             boolean theFieldIsSet = this.isSetPerson();
-            Person theField;
-            theField = this.getPerson();
+            List<PersonType> theField;
+            theField = (this.isSetPerson()?this.getPerson():null);
             strategy.appendField(locator, this, "person", buffer, theField, theFieldIsSet);
         }
         return buffer;

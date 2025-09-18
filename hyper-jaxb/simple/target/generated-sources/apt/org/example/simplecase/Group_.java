@@ -2,6 +2,7 @@ package org.example.simplecase;
 
 import jakarta.annotation.Generated;
 import jakarta.persistence.metamodel.EntityType;
+import jakarta.persistence.metamodel.ListAttribute;
 import jakarta.persistence.metamodel.SingularAttribute;
 import jakarta.persistence.metamodel.StaticMetamodel;
 
@@ -13,7 +14,7 @@ public abstract class Group_ {
 	/**
 	 * @see org.example.simplecase.Group#getPerson
 	 **/
-	public static volatile SingularAttribute<Group, Person> person;
+	public static volatile ListAttribute<Group, PersonType> person;
 	
 	/**
 	 * @see org.example.simplecase.Group
