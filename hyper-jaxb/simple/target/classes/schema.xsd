@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://example.org/simple"
+	targetNamespace="http://example.org/simplecase"
+	elementFormDefault="qualified"
+	xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+	jaxb:version="3.0">
+	
+	<!-- ================== SIMPLE TYPES ================== -->
+	
+	<!-- ================== COMPLEX TYPES ================= -->
+	
+	<!-- ================== GLOBAL TYPES ================== -->
+		
+	<!-- ================== Class structures ============== -->
+		
+	<!-- ================== ROOT ================== -->
+	
+	<xs:element name="group">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="person">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name" type="xs:string"/>
+							<xs:element name="age" type="xs:string"/>
+							<xs:element name="title" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+		
+</xs:schema>

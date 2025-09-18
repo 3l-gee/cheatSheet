@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group xmlns="http://example.org/simplecase">
+	<person>
+		<name>Alice</name>
+		<age>30</age>
+		<title>Engineer</title>
+	</person>
+	<person>
+		<name>Bob</name>
+		<age>45</age>
+		<title>Manager</title>
+	</person>
+	<person>
+		<name>Charlie</name>
+		<age>25</age>
+		<title>Intern</title>
+	</person>
+</group>
