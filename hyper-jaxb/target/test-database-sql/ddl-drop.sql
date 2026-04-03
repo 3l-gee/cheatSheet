@@ -4,8 +4,10 @@ alter table if exists ejb_samples_root_header.DATA_BLOCK drop constraint if exis
 alter table if exists ejb_samples_root_header.DATA_BLOCK drop constraint if exists FK35qtove3j1yujgk9g0m5ugqsh;
 alter table if exists ejb_samples_root_header.DUMP_TYPE drop constraint if exists FKox99pbo4flp6fcpqxps4qy65m;
 alter table if exists ejb_samples_root_header.ROOT drop constraint if exists FKjhtfcfr964elrmcnm9uafv4y;
+alter table if exists ejb_samples_root_header.ROOT drop constraint if exists FKsc5lxyct4eckqqbmrv9weubnc;
 drop table if exists ejb_samples_root_header.ACQUISITION_TYPE cascade;
 drop table if exists ejb_samples_root_header.DATA_BLOCK cascade;
+drop table if exists ejb_samples_root_header.DISTANCE_TYPE cascade;
 drop table if exists ejb_samples_root_header.DUMP_TYPE cascade;
 drop table if exists ejb_samples_root_header.HEADER_TYPE cascade;
 drop table if exists ejb_samples_root_header.LIST_OF_ACQUISITIONS cascade;

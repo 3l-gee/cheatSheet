@@ -3,6 +3,7 @@
     <persistence-unit name="org.example.root_header">
         <class>org.example.root_header.AcquisitionType</class>
         <class>org.example.root_header.DataBlock</class>
+        <class>org.example.root_header.DistanceType</class>
         <class>org.example.root_header.DumpType</class>
         <class>org.example.root_header.HeaderType</class>
         <class>org.example.root_header.ListOfAcquisitions</class>

@@ -4,6 +4,7 @@ package org.example.root_header;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import javax.xml.namespace.QName;
 import jakarta.persistence.Basic;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -13,14 +14,17 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.Transient;
+import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlElementRef;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 import org.jvnet.basicjaxb.lang.Equals;
@@ -35,6 +39,7 @@ import org.jvnet.basicjaxb.lang.ToStringStrategy;
 import org.jvnet.basicjaxb.locator.DefaultRootObjectLocator;
 import org.jvnet.basicjaxb.locator.ObjectLocator;
 import org.jvnet.basicjaxb.locator.util.LocatorUtils;
+import org.jvnet.hyperjaxb.xml.bind.annotation.adapters.XmlAdapterUtils;
 
 
 /**
@@ -47,6 +52,7 @@ import org.jvnet.basicjaxb.locator.util.LocatorUtils;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
+ *         <element name="jaxb" type="{http://example.org/root_header}DistanceType" minOccurs="0"/>
  *         <element name="Header" type="{http://example.org/root_header}HeaderType"/>
  *         <element ref="{http://example.org/root_header}name" minOccurs="0"/>
  *         <element name="Data_Block" maxOccurs="unbounded">
@@ -96,6 +102,7 @@ import org.jvnet.basicjaxb.locator.util.LocatorUtils;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
+    "jaxb",
     "header",
     "name",
     "dataBlock"
@@ -107,6 +114,8 @@ public class ROOT implements Serializable, Equals, HashCode, ToString
 {
 
     private static final long serialVersionUID = 20240501L;
+    @XmlElementRef(name = "jaxb", namespace = "http://example.org/root_header", type = JAXBElement.class, required = false)
+    protected JAXBElement<DistanceType> jaxb;
     @XmlElement(name = "Header", required = true)
     protected HeaderType header;
     @XmlElement(nillable = true)
@@ -115,6 +124,36 @@ public class ROOT implements Serializable, Equals, HashCode, ToString
     protected List<DataBlock> dataBlock;
     @XmlAttribute(name = "Hjid")
     protected Long hjid;
+
+    /**
+     * Gets the value of the jaxb property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link DistanceType }{@code >}
+     *     
+     */
+    @Transient
+    public JAXBElement<DistanceType> getJaxb() {
+        return jaxb;
+    }
+
+    /**
+     * Sets the value of the jaxb property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link DistanceType }{@code >}
+     *     
+     */
+    public void setJaxb(JAXBElement<DistanceType> value) {
+        this.jaxb = value;
+    }
+
+    @Transient
+    public boolean isSetJaxb() {
+        return (this.jaxb!= null);
+    }
 
     /**
      * Gets the value of the header property.
@@ -257,6 +296,21 @@ public class ROOT implements Serializable, Equals, HashCode, ToString
         this.hjid = value;
     }
 
+    @ManyToOne(targetEntity = DistanceType.class, cascade = {
+        CascadeType.MERGE,
+        CascadeType.REFRESH,
+        CascadeType.PERSIST,
+        CascadeType.DETACH
+    }, fetch = FetchType.EAGER)
+    @JoinColumn(name = "JAXB_ITEM_ROOT_HJID")
+    public DistanceType getJaxbItem() {
+        return XmlAdapterUtils.unmarshallSource(DistanceType.class, this.getJaxb());
+    }
+
+    public void setJaxbItem(DistanceType target) {
+        setJaxb(XmlAdapterUtils.marshallJAXBElement(DistanceType.class, new QName("http://example.org/root_header", "jaxb"), ROOT.class, target));
+    }
+
     @Override
     public boolean equals(Object object) {
         ObjectLocator thisLocator = null;
@@ -279,19 +333,6 @@ public class ROOT implements Serializable, Equals, HashCode, ToString
         }
         final ROOT that = ((ROOT) object);
         {
-            boolean lhsFieldIsSet = this.isSetHeader();
-            boolean rhsFieldIsSet = that.isSetHeader();
-            HeaderType lhsField;
-            lhsField = this.getHeader();
-            HeaderType rhsField;
-            rhsField = that.getHeader();
-            ObjectLocator lhsFieldLocator = LocatorUtils.property(thisLocator, "header", lhsField);
-            ObjectLocator rhsFieldLocator = LocatorUtils.property(thatLocator, "header", rhsField);
-            if (!strategy.equals(lhsFieldLocator, rhsFieldLocator, lhsField, rhsField, lhsFieldIsSet, rhsFieldIsSet)) {
-                return false;
-            }
-        }
-        {
             boolean lhsFieldIsSet = this.isSetName();
             boolean rhsFieldIsSet = that.isSetName();
             String lhsField;
@@ -305,6 +346,19 @@ public class ROOT implements Serializable, Equals, HashCode, ToString
             }
         }
         {
+            boolean lhsFieldIsSet = this.isSetHeader();
+            boolean rhsFieldIsSet = that.isSetHeader();
+            HeaderType lhsField;
+            lhsField = this.getHeader();
+            HeaderType rhsField;
+            rhsField = that.getHeader();
+            ObjectLocator lhsFieldLocator = LocatorUtils.property(thisLocator, "header", lhsField);
+            ObjectLocator rhsFieldLocator = LocatorUtils.property(thatLocator, "header", rhsField);
+            if (!strategy.equals(lhsFieldLocator, rhsFieldLocator, lhsField, rhsField, lhsFieldIsSet, rhsFieldIsSet)) {
+                return false;
+            }
+        }
+        {
             boolean lhsFieldIsSet = this.isSetDataBlock();
             boolean rhsFieldIsSet = that.isSetDataBlock();
             List<DataBlock> lhsField;
@@ -313,6 +367,19 @@ public class ROOT implements Serializable, Equals, HashCode, ToString
             rhsField = (that.isSetDataBlock()?that.getDataBlock():null);
             ObjectLocator lhsFieldLocator = LocatorUtils.property(thisLocator, "dataBlock", lhsField);
             ObjectLocator rhsFieldLocator = LocatorUtils.property(thatLocator, "dataBlock", rhsField);
+            if (!strategy.equals(lhsFieldLocator, rhsFieldLocator, lhsField, rhsField, lhsFieldIsSet, rhsFieldIsSet)) {
+                return false;
+            }
+        }
+        {
+            boolean lhsFieldIsSet = this.isSetJaxb();
+            boolean rhsFieldIsSet = that.isSetJaxb();
+            JAXBElement<DistanceType> lhsField;
+            lhsField = this.getJaxb();
+            JAXBElement<DistanceType> rhsField;
+            rhsField = that.getJaxb();
+            ObjectLocator lhsFieldLocator = LocatorUtils.property(thisLocator, "jaxb", lhsField);
+            ObjectLocator rhsFieldLocator = LocatorUtils.property(thatLocator, "jaxb", rhsField);
             if (!strategy.equals(lhsFieldLocator, rhsFieldLocator, lhsField, rhsField, lhsFieldIsSet, rhsFieldIsSet)) {
                 return false;
             }
@@ -333,6 +400,13 @@ public class ROOT implements Serializable, Equals, HashCode, ToString
     @Override
     public int hashCode(ObjectLocator locator, HashCodeStrategy strategy) {
         int currentHashCode = 1;
+        {
+            boolean theFieldIsSet = this.isSetJaxb();
+            JAXBElement<DistanceType> theField;
+            theField = this.getJaxb();
+            ObjectLocator theFieldLocator = LocatorUtils.property(locator, "jaxb", theField);
+            currentHashCode = strategy.hashCode(theFieldLocator, currentHashCode, theField, theFieldIsSet);
+        }
         {
             boolean theFieldIsSet = this.isSetHeader();
             HeaderType theField;
@@ -379,6 +453,12 @@ public class ROOT implements Serializable, Equals, HashCode, ToString
 
     @Override
     public StringBuilder appendFields(ObjectLocator locator, StringBuilder buffer, ToStringStrategy strategy) {
+        {
+            boolean theFieldIsSet = this.isSetJaxb();
+            JAXBElement<DistanceType> theField;
+            theField = this.getJaxb();
+            strategy.appendField(locator, this, "jaxb", buffer, theField, theFieldIsSet);
+        }
         {
             boolean theFieldIsSet = this.isSetHeader();
             HeaderType theField;

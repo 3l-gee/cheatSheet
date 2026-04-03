@@ -22,10 +22,21 @@
 	</xs:complexType>
 
 	<xs:element name="name" type="xs:string" nillable="true"/>
+
+	<!-- define a reusable complex type -->
+	<!-- <xs:element minOccurs="0" nillable="true" name="jaxb" type="tns:DistanceType"/> -->
+	<xs:complexType name="DistanceType">
+		<xs:simpleContent>
+			<xs:extension base="xs:decimal">
+				<xs:attribute name="unit" type="xs:string" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
 	
 	<xs:element name="ROOT">
 		<xs:complexType>
 			<xs:sequence maxOccurs="1">
+				<xs:element minOccurs="0" nillable="true" name="jaxb" type="tns:DistanceType"/>
 				<xs:element name="Header" type="tns:HeaderType" maxOccurs="1">
 					<xs:annotation>
 						<xs:appinfo>

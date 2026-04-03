@@ -175,10 +175,10 @@ public class DataBlock implements Serializable, Equals, HashCode, ToString
      *     
      */
     @ManyToOne(targetEntity = ListOfAcquisitions.class, cascade = {
-        CascadeType.REFRESH,
-        CascadeType.DETACH,
         CascadeType.MERGE,
-        CascadeType.PERSIST
+        CascadeType.REFRESH,
+        CascadeType.PERSIST,
+        CascadeType.DETACH
     }, fetch = FetchType.EAGER)
     @JoinColumn(name = "LIST_OF_ACQUISITIONS_DATA_BL_0")
     public ListOfAcquisitions getListOfAcquisitions() {
@@ -211,10 +211,10 @@ public class DataBlock implements Serializable, Equals, HashCode, ToString
      *     
      */
     @ManyToOne(targetEntity = ListOfDumps.class, cascade = {
-        CascadeType.REFRESH,
-        CascadeType.DETACH,
         CascadeType.MERGE,
-        CascadeType.PERSIST
+        CascadeType.REFRESH,
+        CascadeType.PERSIST,
+        CascadeType.DETACH
     }, fetch = FetchType.EAGER)
     @JoinColumn(name = "LIST_OF_DUMPS_DATA_BLOCK_HJID")
     public ListOfDumps getListOfDumps() {
@@ -318,40 +318,14 @@ public class DataBlock implements Serializable, Equals, HashCode, ToString
         }
         final DataBlock that = ((DataBlock) object);
         {
-            boolean lhsFieldIsSet = this.isSetSensingStartTime();
-            boolean rhsFieldIsSet = that.isSetSensingStartTime();
+            boolean lhsFieldIsSet = this.isSetSensingStopTime();
+            boolean rhsFieldIsSet = that.isSetSensingStopTime();
             String lhsField;
-            lhsField = this.getSensingStartTime();
+            lhsField = this.getSensingStopTime();
             String rhsField;
-            rhsField = that.getSensingStartTime();
-            ObjectLocator lhsFieldLocator = LocatorUtils.property(thisLocator, "sensingStartTime", lhsField);
-            ObjectLocator rhsFieldLocator = LocatorUtils.property(thatLocator, "sensingStartTime", rhsField);
-            if (!strategy.equals(lhsFieldLocator, rhsFieldLocator, lhsField, rhsField, lhsFieldIsSet, rhsFieldIsSet)) {
-                return false;
-            }
-        }
-        {
-            boolean lhsFieldIsSet = this.isSetListOfAcquisitions();
-            boolean rhsFieldIsSet = that.isSetListOfAcquisitions();
-            ListOfAcquisitions lhsField;
-            lhsField = this.getListOfAcquisitions();
-            ListOfAcquisitions rhsField;
-            rhsField = that.getListOfAcquisitions();
-            ObjectLocator lhsFieldLocator = LocatorUtils.property(thisLocator, "listOfAcquisitions", lhsField);
-            ObjectLocator rhsFieldLocator = LocatorUtils.property(thatLocator, "listOfAcquisitions", rhsField);
-            if (!strategy.equals(lhsFieldLocator, rhsFieldLocator, lhsField, rhsField, lhsFieldIsSet, rhsFieldIsSet)) {
-                return false;
-            }
-        }
-        {
-            boolean lhsFieldIsSet = this.isSetListOfDumps();
-            boolean rhsFieldIsSet = that.isSetListOfDumps();
-            ListOfDumps lhsField;
-            lhsField = this.getListOfDumps();
-            ListOfDumps rhsField;
-            rhsField = that.getListOfDumps();
-            ObjectLocator lhsFieldLocator = LocatorUtils.property(thisLocator, "listOfDumps", lhsField);
-            ObjectLocator rhsFieldLocator = LocatorUtils.property(thatLocator, "listOfDumps", rhsField);
+            rhsField = that.getSensingStopTime();
+            ObjectLocator lhsFieldLocator = LocatorUtils.property(thisLocator, "sensingStopTime", lhsField);
+            ObjectLocator rhsFieldLocator = LocatorUtils.property(thatLocator, "sensingStopTime", rhsField);
             if (!strategy.equals(lhsFieldLocator, rhsFieldLocator, lhsField, rhsField, lhsFieldIsSet, rhsFieldIsSet)) {
                 return false;
             }
@@ -370,14 +344,40 @@ public class DataBlock implements Serializable, Equals, HashCode, ToString
             }
         }
         {
-            boolean lhsFieldIsSet = this.isSetSensingStopTime();
-            boolean rhsFieldIsSet = that.isSetSensingStopTime();
+            boolean lhsFieldIsSet = this.isSetSensingStartTime();
+            boolean rhsFieldIsSet = that.isSetSensingStartTime();
             String lhsField;
-            lhsField = this.getSensingStopTime();
+            lhsField = this.getSensingStartTime();
             String rhsField;
-            rhsField = that.getSensingStopTime();
-            ObjectLocator lhsFieldLocator = LocatorUtils.property(thisLocator, "sensingStopTime", lhsField);
-            ObjectLocator rhsFieldLocator = LocatorUtils.property(thatLocator, "sensingStopTime", rhsField);
+            rhsField = that.getSensingStartTime();
+            ObjectLocator lhsFieldLocator = LocatorUtils.property(thisLocator, "sensingStartTime", lhsField);
+            ObjectLocator rhsFieldLocator = LocatorUtils.property(thatLocator, "sensingStartTime", rhsField);
+            if (!strategy.equals(lhsFieldLocator, rhsFieldLocator, lhsField, rhsField, lhsFieldIsSet, rhsFieldIsSet)) {
+                return false;
+            }
+        }
+        {
+            boolean lhsFieldIsSet = this.isSetListOfDumps();
+            boolean rhsFieldIsSet = that.isSetListOfDumps();
+            ListOfDumps lhsField;
+            lhsField = this.getListOfDumps();
+            ListOfDumps rhsField;
+            rhsField = that.getListOfDumps();
+            ObjectLocator lhsFieldLocator = LocatorUtils.property(thisLocator, "listOfDumps", lhsField);
+            ObjectLocator rhsFieldLocator = LocatorUtils.property(thatLocator, "listOfDumps", rhsField);
+            if (!strategy.equals(lhsFieldLocator, rhsFieldLocator, lhsField, rhsField, lhsFieldIsSet, rhsFieldIsSet)) {
+                return false;
+            }
+        }
+        {
+            boolean lhsFieldIsSet = this.isSetListOfAcquisitions();
+            boolean rhsFieldIsSet = that.isSetListOfAcquisitions();
+            ListOfAcquisitions lhsField;
+            lhsField = this.getListOfAcquisitions();
+            ListOfAcquisitions rhsField;
+            rhsField = that.getListOfAcquisitions();
+            ObjectLocator lhsFieldLocator = LocatorUtils.property(thisLocator, "listOfAcquisitions", lhsField);
+            ObjectLocator rhsFieldLocator = LocatorUtils.property(thatLocator, "listOfAcquisitions", rhsField);
             if (!strategy.equals(lhsFieldLocator, rhsFieldLocator, lhsField, rhsField, lhsFieldIsSet, rhsFieldIsSet)) {
                 return false;
             }

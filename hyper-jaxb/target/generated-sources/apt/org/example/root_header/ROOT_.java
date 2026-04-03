@@ -12,6 +12,11 @@ public abstract class ROOT_ {
 
 	
 	/**
+	 * @see org.example.root_header.ROOT#getJaxbItem
+	 **/
+	public static volatile SingularAttribute<ROOT, DistanceType> jaxbItem;
+	
+	/**
 	 * @see org.example.root_header.ROOT#getName
 	 **/
 	public static volatile SingularAttribute<ROOT, String> name;
@@ -36,6 +41,7 @@ public abstract class ROOT_ {
 	 **/
 	public static volatile SingularAttribute<ROOT, Long> hjid;
 
+	public static final String JAXB_ITEM = "jaxbItem";
 	public static final String NAME = "name";
 	public static final String DATA_BLOCK = "dataBlock";
 	public static final String HEADER = "header";

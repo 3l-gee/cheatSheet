@@ -25,6 +25,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
 public class ObjectFactory {
 
     private static final QName _Name_QNAME = new QName("http://example.org/root_header", "name");
+    private static final QName _ROOTJaxb_QNAME = new QName("http://example.org/root_header", "jaxb");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.example.root_header
@@ -41,6 +42,16 @@ public class ObjectFactory {
      */
     public ROOT createROOT() {
         return new ROOT();
+    }
+
+    /**
+     * Create an instance of {@link DistanceType }
+     * 
+     * @return
+     *     the new instance of {@link DistanceType }
+     */
+    public DistanceType createDistanceType() {
+        return new DistanceType();
     }
 
     /**
@@ -114,6 +125,19 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://example.org/root_header", name = "name")
     public JAXBElement<String> createName(String value) {
         return new JAXBElement<>(_Name_QNAME, String.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DistanceType }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link DistanceType }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://example.org/root_header", name = "jaxb", scope = ROOT.class)
+    public JAXBElement<DistanceType> createROOTJaxb(DistanceType value) {
+        return new JAXBElement<>(_ROOTJaxb_QNAME, DistanceType.class, ROOT.class, value);
     }
 
 }

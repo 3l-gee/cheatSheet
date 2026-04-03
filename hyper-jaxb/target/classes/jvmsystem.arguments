@@ -1,3 +1,0 @@
-# JVM System Arguments
-# See build.sh, explore.sh, pom.xml, maven-surefire-plugin
--enableassertions

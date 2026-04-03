@@ -1,0 +1,6 @@
+com\spring\boot\aixm\AIXMMessage.class
+com\spring\boot\aixm\AIXMAttribute.class
+com\spring\boot\aixm\AIXMFeature.class
+com\spring\boot\aixm\AIXMService.class
+com\spring\boot\App.class
+com\spring\boot\controller\AIXMController.class
