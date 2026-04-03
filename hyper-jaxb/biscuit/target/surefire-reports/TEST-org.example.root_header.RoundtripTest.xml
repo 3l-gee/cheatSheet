@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.root_header.RoundtripTest" time="3.276" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="org.slf4j.simpleLogger.log.org.apache.maven.repository.internal.DefaultArtifactDescriptorReader" value="ERROR"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="org.slf4j.simpleLogger.showLogName" value="false"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\gerth\source\repos\3l-gee\cheatSheet\hyper-jaxb\biscuit\target\test-classes;C:\Users\gerth\source\repos\3l-gee\cheatSheet\hyper-jaxb\biscuit\target\classes;C:\Users\gerth\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\gerth\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-basicjaxb-runtime\2.2.1\hisrc-basicjaxb-runtime-2.2.1.jar;C:\Users\gerth\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\gerth\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\gerth\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\gerth\.m2\repository\commons-io\commons-io\2.16.0\commons-io-2.16.0.jar;C:\Users\gerth\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-hyperjaxb-ejb-runtime\2.2.1\hisrc-hyperjaxb-ejb-runtime-2.2.1.jar;C:\Users\gerth\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\gerth\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\gerth\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\gerth\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\gerth\.m2\repository\org\slf4j\slf4j-simple\2.0.12\slf4j-simple-2.0.12.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-hyperjaxb-ejb-roundtrip\2.2.1\hisrc-hyperjaxb-ejb-roundtrip-2.2.1.jar;C:\Users\gerth\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\gerth\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\gerth\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\gerth\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-basicjaxb-testing\2.2.1\hisrc-basicjaxb-testing-2.2.1.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\jaxb-xjc\4.0.5\jaxb-xjc-4.0.5.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\xsom\4.0.5\xsom-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\xml\bind\external\relaxng-datatype\4.0.5\relaxng-datatype-4.0.5.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\codemodel\4.0.5\codemodel-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\xml\bind\external\rngom\4.0.5\rngom-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\xml\dtd-parser\dtd-parser\1.5.1\dtd-parser-1.5.1.jar;C:\Users\gerth\.m2\repository\com\sun\istack\istack-commons-tools\4.1.2\istack-commons-tools-4.1.2.jar;C:\Users\gerth\.m2\repository\xmlunit\xmlunit\1.6\xmlunit-1.6.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-hyperjaxb-opt-hibernate\2.2.1\hisrc-hyperjaxb-opt-hibernate-2.2.1.jar;C:\Users\gerth\.m2\repository\io\smallrye\jandex\3.1.7\jandex-3.1.7.jar;C:\Users\gerth\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\gerth\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\gerth\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\gerth\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\gerth\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\gerth\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\gerth\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\gerth\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\gerth\.m2\repository\org\hibernate\orm\hibernate-jcache\6.4.4.Final\hibernate-jcache-6.4.4.Final.jar;C:\Users\gerth\.m2\repository\javax\cache\cache-api\1.0.0\cache-api-1.0.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Zurich"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="user.country.format" value="150"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="org.slf4j.simpleLogger.showShortLogName" value="false"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\gerth\AppData\Local\Temp\surefire16136904238159237696\surefirebooter-20250918133000423_3.jar C:\Users\gerth\AppData\Local\Temp\surefire16136904238159237696 2025-09-18T13-30-00_287-jvmRun1 surefire-20250918133000423_1tmp surefire_0-20250918133000423_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\gerth\source\repos\3l-gee\cheatSheet\hyper-jaxb\biscuit\target\test-classes;C:\Users\gerth\source\repos\3l-gee\cheatSheet\hyper-jaxb\biscuit\target\classes;C:\Users\gerth\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\gerth\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-basicjaxb-runtime\2.2.1\hisrc-basicjaxb-runtime-2.2.1.jar;C:\Users\gerth\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\gerth\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\gerth\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\gerth\.m2\repository\commons-io\commons-io\2.16.0\commons-io-2.16.0.jar;C:\Users\gerth\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-hyperjaxb-ejb-runtime\2.2.1\hisrc-hyperjaxb-ejb-runtime-2.2.1.jar;C:\Users\gerth\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\gerth\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\gerth\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\gerth\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\gerth\.m2\repository\org\slf4j\slf4j-simple\2.0.12\slf4j-simple-2.0.12.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-hyperjaxb-ejb-roundtrip\2.2.1\hisrc-hyperjaxb-ejb-roundtrip-2.2.1.jar;C:\Users\gerth\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\gerth\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\gerth\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\gerth\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-basicjaxb-testing\2.2.1\hisrc-basicjaxb-testing-2.2.1.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\jaxb-xjc\4.0.5\jaxb-xjc-4.0.5.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\xsom\4.0.5\xsom-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\xml\bind\external\relaxng-datatype\4.0.5\relaxng-datatype-4.0.5.jar;C:\Users\gerth\.m2\repository\org\glassfish\jaxb\codemodel\4.0.5\codemodel-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\xml\bind\external\rngom\4.0.5\rngom-4.0.5.jar;C:\Users\gerth\.m2\repository\com\sun\xml\dtd-parser\dtd-parser\1.5.1\dtd-parser-1.5.1.jar;C:\Users\gerth\.m2\repository\com\sun\istack\istack-commons-tools\4.1.2\istack-commons-tools-4.1.2.jar;C:\Users\gerth\.m2\repository\xmlunit\xmlunit\1.6\xmlunit-1.6.jar;C:\Users\gerth\.m2\repository\org\patrodyne\jvnet\hisrc-hyperjaxb-opt-hibernate\2.2.1\hisrc-hyperjaxb-opt-hibernate-2.2.1.jar;C:\Users\gerth\.m2\repository\io\smallrye\jandex\3.1.7\jandex-3.1.7.jar;C:\Users\gerth\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\gerth\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\gerth\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\gerth\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\gerth\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\gerth\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\gerth\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\gerth\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\gerth\.m2\repository\org\hibernate\orm\hibernate-jcache\6.4.4.Final\hibernate-jcache-6.4.4.Final.jar;C:\Users\gerth\.m2\repository\javax\cache\cache-api\1.0.0\cache-api-1.0.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\gerth"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="org.jvnet.hyperjaxb.persistencePropertiesMoreFile" value="persistence-pg.properties"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\gerth\source\repos\3l-gee\cheatSheet\hyper-jaxb\biscuit"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="org.jvnet.hyperjaxb.persistencePropertiesBaseFile" value="persistence.properties"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="org.jvnet.hyperjaxb.todoLogLevel" value="DEBUG"/>
+    <property name="surefire.real.class.path" value="C:\Users\gerth\AppData\Local\Temp\surefire16136904238159237696\surefirebooter-20250918133000423_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.3+7-LTS-152"/>
+    <property name="user.name" value="gerth"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="org.slf4j.simpleLogger.log.org.codehaus.mojo.exec.ExecJavaMojo" value="ERROR"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\gerth\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\gerth\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.3"/>
+    <property name="user.dir" value="C:\Users\gerth\source\repos\3l-gee\cheatSheet\hyper-jaxb\biscuit"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="org.jvnet.hyperjaxb.persistence" value="hibernate"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Users\gerth\AppData\Local\Programs\Python\Python311;C:\Program Files\Eclipse Adoptium\jre-8.0.322.6-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Graphviz\bin;C:\ProgramData\chocolatey\bin;C:\Users\gerth\AppData\Local\Programs\Python\Python311\Scripts;C:\Program Files\QGIS 3.28.3;C:\Program Files\Apache\maven\apache-maven-3.9.8\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\wget;C:\Program Files (x86)\Kaspersky Lab\KES.12.9.0\;C:\Program Files\xidel-0.9.8.win32;C:\Users\LokalerAdmin\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\LokalerAdmin\AppData\Local\nvm;C:\Users\LokalerAdmin\AppData\Local\nvm\v22.12.0;C:\Users\gerth\AppData\Local\Programs\Python\Launcher\;C:\Users\gerth\.cargo\bin;C:\Users\gerth\AppData\Local\Microsoft\WindowsApps;C:\Users\gerth\AppData\Local\Programs\Git\cmd;C:\Users\gerth\AppData\Local\Programs\Microsoft VS Code\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.3+7-LTS-152"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testSamples" classname="org.example.root_header.RoundtripTest" time="3.244">
+    <system-out><![CDATA[13:30:01:311 INFO EMF: Detected [file:/C:/Users/gerth/source/repos/3l-gee/cheatSheet/hyper-jaxb/biscuit/target/classes/META-INF/persistence.xml].
+13:30:01:313 DEBUG Loading entity manager factory properties.
+13:30:01:314 INFO EMF: Loading [file:/C:/Users/gerth/source/repos/3l-gee/cheatSheet/hyper-jaxb/biscuit/target/classes/persistence.properties].
+13:30:01:314 DEBUG Loading more entity manager factory properties.
+13:30:01:315 INFO EMF: Loading [file:/C:/Users/gerth/source/repos/3l-gee/cheatSheet/hyper-jaxb/biscuit/target/classes/persistence-pg.properties].
+13:30:03:667 DEBUG alter table if exists biscuit.CHOCOLATE_BISCUIT drop constraint if exists FKem5l6wplur6i9e92w1gir8r1h
+13:30:03:681 DEBUG alter table if exists biscuit.INGREDIENTS drop constraint if exists FKkwvyfj2a2elwkjd2jx2857odi
+13:30:03:682 DEBUG alter table if exists biscuit.INGREDIENTS drop constraint if exists FKawft386hlelp4l698eb8l3tn3
+13:30:03:683 DEBUG alter table if exists biscuit.INGREDIENTS_ALLERGENS drop constraint if exists FKmrhiuvvlnlojhqdk02u1mlt47
+13:30:03:684 DEBUG alter table if exists biscuit.JAM_BISCUIT drop constraint if exists FK38bgt6wl6h6kknq4mv3ubgdkc
+13:30:03:685 DEBUG alter table if exists biscuit.RECIPE drop constraint if exists FKe83r6pn3b7n78iq42gig826jq
+13:30:03:686 DEBUG alter table if exists biscuit.RECIPE drop constraint if exists FKh81jk38oyypitabc2ofxh4lkc
+13:30:03:688 DEBUG alter table if exists biscuit.RECIPE drop constraint if exists FK97dy4i4dab1dbapni5my5vfw3
+13:30:03:688 DEBUG alter table if exists biscuit.RECIPE drop constraint if exists FKtecmlbqu44kmvfvtdgcrlbjwt
+13:30:03:689 DEBUG alter table if exists biscuit.RECIPE drop constraint if exists FK8ykfpbgxw1falcb68dtp5pvqd
+13:30:03:690 DEBUG alter table if exists biscuit.RECIPE drop constraint if exists FKptrj77pdotcqbb9egn1a4wst0
+13:30:03:690 DEBUG alter table if exists biscuit.RECIPE_STEP drop constraint if exists FK77fa6nclm2jd8lr8mb1et24cl
+13:30:03:691 DEBUG alter table if exists biscuit.SWEETENER_CHOICE drop constraint if exists FKsmp44vgytmxs7f3pi8q59uwot
+13:30:03:692 DEBUG alter table if exists biscuit.SWEETENER_CHOICE drop constraint if exists FK5ts950wfqqqlpr5ox2q6lpri4
+13:30:03:693 DEBUG alter table if exists biscuit.SWEETENER_CHOICE drop constraint if exists FKd8cohloqiyg60hhgvg9fu9cy0
+13:30:03:694 DEBUG drop table if exists biscuit.ABSTRACT_BISCUIT cascade
+13:30:03:736 DEBUG drop table if exists biscuit.CHOCOLATE_BISCUIT cascade
+13:30:03:753 DEBUG drop table if exists biscuit.INGREDIENT_AMOUNT cascade
+13:30:03:770 DEBUG drop table if exists biscuit.INGREDIENTS cascade
+13:30:03:786 DEBUG drop table if exists biscuit.INGREDIENTS_ALLERGENS cascade
+13:30:03:798 DEBUG drop table if exists biscuit.JAM_BISCUIT cascade
+13:30:03:810 DEBUG drop table if exists biscuit.NOTES cascade
+13:30:03:831 DEBUG drop table if exists biscuit.RECIPE cascade
+13:30:03:853 DEBUG drop table if exists biscuit.RECIPE_BOOK cascade
+13:30:03:867 DEBUG drop table if exists biscuit.RECIPE_STEP cascade
+13:30:03:886 DEBUG drop table if exists biscuit.SWEETENER_CHOICE cascade
+13:30:03:900 DEBUG drop table if exists biscuit.TRAY_TYPE cascade
+13:30:03:913 DEBUG create table biscuit.ABSTRACT_BISCUIT (HJID bigserial not null, FLOUR varchar(255) check (FLOUR in ('WHEAT','RYE','OAT','CORN','GLUTEN_FREE')), SHAPE varchar(255) check (SHAPE in ('ROUND','SQUARE','STAR','HEART')), primary key (HJID))
+13:30:03:976 DEBUG create table biscuit.CHOCOLATE_BISCUIT (COCOA_CONTENT integer, HJID bigint not null, primary key (HJID))
+13:30:03:981 DEBUG create table biscuit.INGREDIENT_AMOUNT (VALUE_ numeric(20,10), HJID bigserial not null, UNIT varchar(255), primary key (HJID))
+13:30:03:987 DEBUG create table biscuit.INGREDIENTS (AMOUNT_INGREDIENTS_HJID bigint, HJID bigserial not null, INGREDIENTS_RECIPE_HJID bigint, NAME_ varchar(255), primary key (HJID))
+13:30:03:997 DEBUG create table biscuit.INGREDIENTS_ALLERGENS (HJINDEX integer not null, HJID bigint not null, HJVALUE varchar(255), primary key (HJINDEX, HJID))
+13:30:04:004 DEBUG create table biscuit.JAM_BISCUIT (HJID bigint not null, JAM_FLAVOR varchar(255), primary key (HJID))
+13:30:04:008 DEBUG create table biscuit.NOTES (HJID bigserial not null, LANGUAGE_ varchar(255), VALUE_ varchar(255), primary key (HJID))
+13:30:04:017 DEBUG create table biscuit.RECIPE (BISCUIT_NOTES_ITEM_RECIPE_HJ_0 bigint, BISCUIT_VALUE_RECIPE_HJID bigint, CREATED_ITEM timestamp(6), HJID bigserial not null, RECIPE_NOTES_ITEM_RECIPE_HJID bigint, RECIPE_RECIPE_BOOK_HJID bigint, SWEETENER_RECIPE_HJID bigint, TRAY_RECIPE_HJID bigint, UPDATED_ITEM timestamp(6), BISCUIT_NAME varchar(255), DIFFICULTY varchar(255), TITLE varchar(255), primary key (HJID))
+13:30:04:035 DEBUG create table biscuit.RECIPE_BOOK (HJID bigserial not null, primary key (HJID))
+13:30:04:042 DEBUG create table biscuit.RECIPE_STEP (STEP_NUMBER integer, HJID bigserial not null, STEPS_RECIPE_HJID bigint, DURATION varchar(255), INSTRUCTION varchar(255), primary key (HJID))
+13:30:04:053 DEBUG create table biscuit.SWEETENER_CHOICE (HJID bigserial not null, HONEY_SWEETENER_CHOICE_HJID bigint, SUGAR_SWEETENER_CHOICE_HJID bigint, SYRUP_SWEETENER_CHOICE_HJID bigint, primary key (HJID))
+13:30:04:058 DEBUG create table biscuit.TRAY_TYPE (LENGTH_ numeric(20,10), WIDTH numeric(20,10), HJID bigserial not null, MATERIAL varchar(255), primary key (HJID))
+13:30:04:064 DEBUG alter table if exists biscuit.CHOCOLATE_BISCUIT add constraint FKem5l6wplur6i9e92w1gir8r1h foreign key (HJID) references biscuit.ABSTRACT_BISCUIT
+13:30:04:077 DEBUG alter table if exists biscuit.INGREDIENTS add constraint FKkwvyfj2a2elwkjd2jx2857odi foreign key (AMOUNT_INGREDIENTS_HJID) references biscuit.INGREDIENT_AMOUNT
+13:30:04:078 DEBUG alter table if exists biscuit.INGREDIENTS add constraint FKawft386hlelp4l698eb8l3tn3 foreign key (INGREDIENTS_RECIPE_HJID) references biscuit.RECIPE
+13:30:04:079 DEBUG alter table if exists biscuit.INGREDIENTS_ALLERGENS add constraint FKmrhiuvvlnlojhqdk02u1mlt47 foreign key (HJID) references biscuit.INGREDIENTS
+13:30:04:083 DEBUG alter table if exists biscuit.JAM_BISCUIT add constraint FK38bgt6wl6h6kknq4mv3ubgdkc foreign key (HJID) references biscuit.ABSTRACT_BISCUIT
+13:30:04:085 DEBUG alter table if exists biscuit.RECIPE add constraint FKe83r6pn3b7n78iq42gig826jq foreign key (BISCUIT_NOTES_ITEM_RECIPE_HJ_0) references biscuit.NOTES
+13:30:04:087 DEBUG alter table if exists biscuit.RECIPE add constraint FKh81jk38oyypitabc2ofxh4lkc foreign key (BISCUIT_VALUE_RECIPE_HJID) references biscuit.ABSTRACT_BISCUIT
+13:30:04:088 DEBUG alter table if exists biscuit.RECIPE add constraint FK97dy4i4dab1dbapni5my5vfw3 foreign key (RECIPE_NOTES_ITEM_RECIPE_HJID) references biscuit.NOTES
+13:30:04:088 DEBUG alter table if exists biscuit.RECIPE add constraint FKtecmlbqu44kmvfvtdgcrlbjwt foreign key (SWEETENER_RECIPE_HJID) references biscuit.SWEETENER_CHOICE
+13:30:04:090 DEBUG alter table if exists biscuit.RECIPE add constraint FK8ykfpbgxw1falcb68dtp5pvqd foreign key (TRAY_RECIPE_HJID) references biscuit.TRAY_TYPE
+13:30:04:091 DEBUG alter table if exists biscuit.RECIPE add constraint FKptrj77pdotcqbb9egn1a4wst0 foreign key (RECIPE_RECIPE_BOOK_HJID) references biscuit.RECIPE_BOOK
+13:30:04:092 DEBUG alter table if exists biscuit.RECIPE_STEP add constraint FK77fa6nclm2jd8lr8mb1et24cl foreign key (STEPS_RECIPE_HJID) references biscuit.RECIPE
+13:30:04:093 DEBUG alter table if exists biscuit.SWEETENER_CHOICE add constraint FKsmp44vgytmxs7f3pi8q59uwot foreign key (HONEY_SWEETENER_CHOICE_HJID) references biscuit.INGREDIENT_AMOUNT
+13:30:04:094 DEBUG alter table if exists biscuit.SWEETENER_CHOICE add constraint FK5ts950wfqqqlpr5ox2q6lpri4 foreign key (SUGAR_SWEETENER_CHOICE_HJID) references biscuit.INGREDIENT_AMOUNT
+13:30:04:095 DEBUG alter table if exists biscuit.SWEETENER_CHOICE add constraint FKd8cohloqiyg60hhgvg9fu9cy0 foreign key (SYRUP_SWEETENER_CHOICE_HJID) references biscuit.INGREDIENT_AMOUNT
+13:30:04:101 DEBUG Testing samples, start
+13:30:04:101 INFO Testing directory [C:\Users\gerth\source\repos\3l-gee\cheatSheet\hyper-jaxb\biscuit\src\test\samples].
+13:30:04:109 DEBUG Testing sample, start [biscuit.xml].
+13:30:04:186 DEBUG Unmarshalling sample.
+13:30:04:208 DEBUG Unmarshalling etalon.
+13:30:04:228 TRACE Etalon object:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<recipeBook xmlns="http://example.org/biscuits">
+    <recipe difficulty="EASY" created="2025-09-01T10:00:00" updated="2025-09-05T09:15:00">
+        <title>Classic Chocolate Biscuits</title>
+        <ingredients>
+            <name>Flour</name>
+            <amount unit="g">250</amount>
+            <allergens>GLUTEN EGGS</allergens>
+        </ingredients>
+        <ingredients>
+            <name>Butter</name>
+            <amount unit="g">100</amount>
+            <allergens>MILK</allergens>
+        </ingredients>
+        <ingredients>
+            <name>Cocoa Powder</name>
+            <amount unit="g">50</amount>
+        </ingredients>
+        <sweetener>
+            <sugar unit="g">80</sugar>
+        </sweetener>
+        <steps stepNumber="1">
+            <instruction>Sift flour and cocoa together.</instruction>
+            <duration>5</duration>
+        </steps>
+        <steps stepNumber="2">
+            <instruction>Mix with butter until crumbly.</instruction>
+        </steps>
+        <steps stepNumber="3">
+            <instruction>Bake until crisp.</instruction>
+            <duration>15</duration>
+        </steps>
+        <tray material="metal">
+            <length>30</length>
+            <width>20</width>
+        </tray>
+        <chocolateBiscuit shape="ROUND" flour="WHEAT">
+            <cocoaContent>70</cocoaContent>
+        </chocolateBiscuit>
+        <recipeNotes language="en">Use a firm jam to avoid soggy centers.</recipeNotes>
+        <biscuitNotes language="en">Cut a small vent in the top to prevent bubbling.</biscuitNotes>
+    </recipe>
+    <recipe difficulty="MEDIUM" created="2025-09-02T14:30:00" updated="2025-09-06T12:00:00">
+        <title>Jam-Filled Biscuits</title>
+        <ingredients>
+            <name>Flour</name>
+            <amount unit="g">200</amount>
+            <allergens>GLUTEN</allergens>
+        </ingredients>
+        <ingredients>
+            <name>Butter</name>
+            <amount unit="g">120</amount>
+            <allergens>MILK</allergens>
+        </ingredients>
+        <ingredients>
+            <name>Strawberry Jam</name>
+            <amount unit="tbsp">3</amount>
+        </ingredients>
+        <sweetener>
+            <honey unit="ml">50</honey>
+        </sweetener>
+        <steps stepNumber="1">
+            <instruction>Mix flour and butter into dough.</instruction>
+        </steps>
+        <steps stepNumber="2">
+            <instruction>Roll out and cut shapes.</instruction>
+        </steps>
+        <steps stepNumber="3">
+            <instruction>Add jam filling and bake.</instruction>
+            <duration>other:untilGolden</duration>
+        </steps>
+        <tray material="ceramic">
+            <length>25</length>
+            <width>25</width>
+        </tray>
+        <jamBiscuit shape="HEART" flour="RYE">
+            <jamFlavor>Strawberry</jamFlavor>
+        </jamBiscuit>
+        <recipeNotes language="en">Keep dough chilled 30 minutes before rolling.</recipeNotes>
+        <biscuitNotes language="en">Store in an airtight container; best eaten within 3 days.</biscuitNotes>
+    </recipe>
+</recipeBook>
+
+13:30:04:228 DEBUG Persisting the unmarshalled sample.
+13:30:04:305 DEBUG insert into biscuit.RECIPE_BOOK default values
+13:30:04:324 DEBUG insert into biscuit.NOTES (LANGUAGE_,VALUE_) values (?,?)
+13:30:04:331 DEBUG insert into biscuit.ABSTRACT_BISCUIT (FLOUR,SHAPE) values (?,?)
+13:30:04:334 DEBUG insert into biscuit.CHOCOLATE_BISCUIT (COCOA_CONTENT,HJID) values (?,?)
+13:30:04:340 DEBUG insert into biscuit.NOTES (LANGUAGE_,VALUE_) values (?,?)
+13:30:04:341 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+13:30:04:344 DEBUG insert into biscuit.SWEETENER_CHOICE (HONEY_SWEETENER_CHOICE_HJID,SUGAR_SWEETENER_CHOICE_HJID,SYRUP_SWEETENER_CHOICE_HJID) values (?,?,?)
+13:30:04:347 DEBUG insert into biscuit.TRAY_TYPE (LENGTH_,MATERIAL,WIDTH) values (?,?,?)
+13:30:04:358 DEBUG insert into biscuit.RECIPE (BISCUIT_NAME,BISCUIT_NOTES_ITEM_RECIPE_HJ_0,BISCUIT_VALUE_RECIPE_HJID,CREATED_ITEM,DIFFICULTY,RECIPE_NOTES_ITEM_RECIPE_HJID,SWEETENER_RECIPE_HJID,TITLE,TRAY_RECIPE_HJID,UPDATED_ITEM) values (?,?,?,?,?,?,?,?,?,?)
+13:30:04:361 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+13:30:04:363 DEBUG insert into biscuit.INGREDIENTS (AMOUNT_INGREDIENTS_HJID,NAME_) values (?,?)
+13:30:04:365 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+13:30:04:367 DEBUG insert into biscuit.INGREDIENTS (AMOUNT_INGREDIENTS_HJID,NAME_) values (?,?)
+13:30:04:368 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+13:30:04:369 DEBUG insert into biscuit.INGREDIENTS (AMOUNT_INGREDIENTS_HJID,NAME_) values (?,?)
+13:30:04:371 DEBUG insert into biscuit.RECIPE_STEP (DURATION,INSTRUCTION,STEP_NUMBER) values (?,?,?)
+13:30:04:372 DEBUG insert into biscuit.RECIPE_STEP (DURATION,INSTRUCTION,STEP_NUMBER) values (?,?,?)
+13:30:04:373 DEBUG insert into biscuit.RECIPE_STEP (DURATION,INSTRUCTION,STEP_NUMBER) values (?,?,?)
+13:30:04:375 DEBUG insert into biscuit.NOTES (LANGUAGE_,VALUE_) values (?,?)
+13:30:04:375 DEBUG insert into biscuit.ABSTRACT_BISCUIT (FLOUR,SHAPE) values (?,?)
+13:30:04:376 DEBUG insert into biscuit.JAM_BISCUIT (JAM_FLAVOR,HJID) values (?,?)
+13:30:04:378 DEBUG insert into biscuit.NOTES (LANGUAGE_,VALUE_) values (?,?)
+13:30:04:379 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+13:30:04:380 DEBUG insert into biscuit.SWEETENER_CHOICE (HONEY_SWEETENER_CHOICE_HJID,SUGAR_SWEETENER_CHOICE_HJID,SYRUP_SWEETENER_CHOICE_HJID) values (?,?,?)
+13:30:04:381 DEBUG insert into biscuit.TRAY_TYPE (LENGTH_,MATERIAL,WIDTH) values (?,?,?)
+13:30:04:383 DEBUG insert into biscuit.RECIPE (BISCUIT_NAME,BISCUIT_NOTES_ITEM_RECIPE_HJ_0,BISCUIT_VALUE_RECIPE_HJID,CREATED_ITEM,DIFFICULTY,RECIPE_NOTES_ITEM_RECIPE_HJID,SWEETENER_RECIPE_HJID,TITLE,TRAY_RECIPE_HJID,UPDATED_ITEM) values (?,?,?,?,?,?,?,?,?,?)
+13:30:04:384 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+13:30:04:384 DEBUG insert into biscuit.INGREDIENTS (AMOUNT_INGREDIENTS_HJID,NAME_) values (?,?)
+13:30:04:385 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+13:30:04:386 DEBUG insert into biscuit.INGREDIENTS (AMOUNT_INGREDIENTS_HJID,NAME_) values (?,?)
+13:30:04:386 DEBUG insert into biscuit.INGREDIENT_AMOUNT (UNIT,VALUE_) values (?,?)
+13:30:04:386 DEBUG insert into biscuit.INGREDIENTS (AMOUNT_INGREDIENTS_HJID,NAME_) values (?,?)
+13:30:04:388 DEBUG insert into biscuit.RECIPE_STEP (DURATION,INSTRUCTION,STEP_NUMBER) values (?,?,?)
+13:30:04:388 DEBUG insert into biscuit.RECIPE_STEP (DURATION,INSTRUCTION,STEP_NUMBER) values (?,?,?)
+13:30:04:389 DEBUG insert into biscuit.RECIPE_STEP (DURATION,INSTRUCTION,STEP_NUMBER) values (?,?,?)
+13:30:04:403 DEBUG update biscuit.RECIPE set RECIPE_RECIPE_BOOK_HJID=? where HJID=?
+13:30:04:404 DEBUG update biscuit.RECIPE set RECIPE_RECIPE_BOOK_HJID=? where HJID=?
+13:30:04:406 DEBUG update biscuit.INGREDIENTS set INGREDIENTS_RECIPE_HJID=? where HJID=?
+13:30:04:406 DEBUG update biscuit.INGREDIENTS set INGREDIENTS_RECIPE_HJID=? where HJID=?
+13:30:04:406 DEBUG update biscuit.INGREDIENTS set INGREDIENTS_RECIPE_HJID=? where HJID=?
+13:30:04:408 DEBUG update biscuit.RECIPE_STEP set STEPS_RECIPE_HJID=? where HJID=?
+13:30:04:408 DEBUG update biscuit.RECIPE_STEP set STEPS_RECIPE_HJID=? where HJID=?
+13:30:04:409 DEBUG update biscuit.RECIPE_STEP set STEPS_RECIPE_HJID=? where HJID=?
+13:30:04:409 DEBUG insert into biscuit.INGREDIENTS_ALLERGENS (HJID,HJINDEX,HJVALUE) values (?,?,?)
+13:30:04:410 DEBUG insert into biscuit.INGREDIENTS_ALLERGENS (HJID,HJINDEX,HJVALUE) values (?,?,?)
+13:30:04:411 DEBUG insert into biscuit.INGREDIENTS_ALLERGENS (HJID,HJINDEX,HJVALUE) values (?,?,?)
+13:30:04:411 DEBUG update biscuit.INGREDIENTS set INGREDIENTS_RECIPE_HJID=? where HJID=?
+13:30:04:411 DEBUG update biscuit.INGREDIENTS set INGREDIENTS_RECIPE_HJID=? where HJID=?
+13:30:04:412 DEBUG update biscuit.INGREDIENTS set INGREDIENTS_RECIPE_HJID=? where HJID=?
+13:30:04:412 DEBUG update biscuit.RECIPE_STEP set STEPS_RECIPE_HJID=? where HJID=?
+13:30:04:412 DEBUG update biscuit.RECIPE_STEP set STEPS_RECIPE_HJID=? where HJID=?
+13:30:04:412 DEBUG update biscuit.RECIPE_STEP set STEPS_RECIPE_HJID=? where HJID=?
+13:30:04:414 DEBUG insert into biscuit.INGREDIENTS_ALLERGENS (HJID,HJINDEX,HJVALUE) values (?,?,?)
+13:30:04:414 DEBUG insert into biscuit.INGREDIENTS_ALLERGENS (HJID,HJINDEX,HJVALUE) values (?,?,?)
+13:30:04:422 TRACE Saved object:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<recipeBook Hjid="1" xmlns="http://example.org/biscuits">
+    <recipe difficulty="EASY" created="2025-09-01T10:00:00.000" updated="2025-09-05T09:15:00.000" Hjid="1">
+        <title>Classic Chocolate Biscuits</title>
+        <ingredients Hjid="1">
+            <name>Flour</name>
+            <amount unit="g" Hjid="2">250</amount>
+            <allergens>GLUTEN EGGS</allergens>
+        </ingredients>
+        <ingredients Hjid="2">
+            <name>Butter</name>
+            <amount unit="g" Hjid="3">100</amount>
+            <allergens>MILK</allergens>
+        </ingredients>
+        <ingredients Hjid="3">
+            <name>Cocoa Powder</name>
+            <amount unit="g" Hjid="4">50</amount>
+            <allergens></allergens>
+        </ingredients>
+        <sweetener Hjid="1">
+            <sugar unit="g" Hjid="1">80</sugar>
+        </sweetener>
+        <steps stepNumber="1" Hjid="1">
+            <instruction>Sift flour and cocoa together.</instruction>
+            <duration>5</duration>
+        </steps>
+        <steps stepNumber="2" Hjid="2">
+            <instruction>Mix with butter until crumbly.</instruction>
+        </steps>
+        <steps stepNumber="3" Hjid="3">
+            <instruction>Bake until crisp.</instruction>
+            <duration>15</duration>
+        </steps>
+        <tray material="metal" Hjid="1">
+            <length>30</length>
+            <width>20</width>
+        </tray>
+        <chocolateBiscuit shape="ROUND" flour="WHEAT" Hjid="1">
+            <cocoaContent>70</cocoaContent>
+        </chocolateBiscuit>
+        <recipeNotes language="en" Hjid="2">Use a firm jam to avoid soggy centers.</recipeNotes>
+        <biscuitNotes language="en" Hjid="1">Cut a small vent in the top to prevent bubbling.</biscuitNotes>
+    </recipe>
+    <recipe difficulty="MEDIUM" created="2025-09-02T14:30:00.000" updated="2025-09-06T12:00:00.000" Hjid="2">
+        <title>Jam-Filled Biscuits</title>
+        <ingredients Hjid="4">
+            <name>Flour</name>
+            <amount unit="g" Hjid="6">200</amount>
+            <allergens>GLUTEN</allergens>
+        </ingredients>
+        <ingredients Hjid="5">
+            <name>Butter</name>
+            <amount unit="g" Hjid="7">120</amount>
+            <allergens>MILK</allergens>
+        </ingredients>
+        <ingredients Hjid="6">
+            <name>Strawberry Jam</name>
+            <amount unit="tbsp" Hjid="8">3</amount>
+            <allergens></allergens>
+        </ingredients>
+        <sweetener Hjid="2">
+            <honey unit="ml" Hjid="5">50</honey>
+        </sweetener>
+        <steps stepNumber="1" Hjid="4">
+            <instruction>Mix flour and butter into dough.</instruction>
+        </steps>
+        <steps stepNumber="2" Hjid="5">
+            <instruction>Roll out and cut shapes.</instruction>
+        </steps>
+        <steps stepNumber="3" Hjid="6">
+            <instruction>Add jam filling and bake.</instruction>
+            <duration>other:untilGolden</duration>
+        </steps>
+        <tray material="ceramic" Hjid="2">
+            <length>25</length>
+            <width>25</width>
+        </tray>
+        <jamBiscuit shape="HEART" flour="RYE" Hjid="2">
+            <jamFlavor>Strawberry</jamFlavor>
+        </jamBiscuit>
+        <recipeNotes language="en" Hjid="4">Keep dough chilled 30 minutes before rolling.</recipeNotes>
+        <biscuitNotes language="en" Hjid="3">Store in an airtight container; best eaten within 3 days.</biscuitNotes>
+    </recipe>
+</recipeBook>
+
+13:30:04:424 DEBUG Loading the persisted sample.
+13:30:04:454 DEBUG select rb1_0.HJID,r1_0.RECIPE_RECIPE_BOOK_HJID,r1_0.HJID,r1_0.BISCUIT_NAME,bni1_0.HJID,bni1_0.LANGUAGE_,bni1_0.VALUE_,bv1_0.HJID,case when bv1_1.HJID is not null then 1 when bv1_2.HJID is not null then 2 end,bv1_0.FLOUR,bv1_0.SHAPE,bv1_1.COCOA_CONTENT,bv1_2.JAM_FLAVOR,r1_0.CREATED_ITEM,r1_0.DIFFICULTY,rni1_0.HJID,rni1_0.LANGUAGE_,rni1_0.VALUE_,s1_0.HJID,h1_0.HJID,h1_0.UNIT,h1_0.VALUE_,s2_0.HJID,s2_0.UNIT,s2_0.VALUE_,s3_0.HJID,s3_0.UNIT,s3_0.VALUE_,r1_0.TITLE,t1_0.HJID,t1_0.LENGTH_,t1_0.MATERIAL,t1_0.WIDTH,r1_0.UPDATED_ITEM from biscuit.RECIPE_BOOK rb1_0 left join biscuit.RECIPE r1_0 on rb1_0.HJID=r1_0.RECIPE_RECIPE_BOOK_HJID left join biscuit.NOTES bni1_0 on bni1_0.HJID=r1_0.BISCUIT_NOTES_ITEM_RECIPE_HJ_0 left join (biscuit.ABSTRACT_BISCUIT bv1_0 left join biscuit.CHOCOLATE_BISCUIT bv1_1 on bv1_0.HJID=bv1_1.HJID left join biscuit.JAM_BISCUIT bv1_2 on bv1_0.HJID=bv1_2.HJID) on bv1_0.HJID=r1_0.BISCUIT_VALUE_RECIPE_HJID left join biscuit.NOTES rni1_0 on rni1_0.HJID=r1_0.RECIPE_NOTES_ITEM_RECIPE_HJID left join biscuit.SWEETENER_CHOICE s1_0 on s1_0.HJID=r1_0.SWEETENER_RECIPE_HJID left join biscuit.INGREDIENT_AMOUNT h1_0 on h1_0.HJID=s1_0.HONEY_SWEETENER_CHOICE_HJID left join biscuit.INGREDIENT_AMOUNT s2_0 on s2_0.HJID=s1_0.SUGAR_SWEETENER_CHOICE_HJID left join biscuit.INGREDIENT_AMOUNT s3_0 on s3_0.HJID=s1_0.SYRUP_SWEETENER_CHOICE_HJID left join biscuit.TRAY_TYPE t1_0 on t1_0.HJID=r1_0.TRAY_RECIPE_HJID where rb1_0.HJID=?
+13:30:04:477 DEBUG select s1_0.STEPS_RECIPE_HJID,s1_0.HJID,s1_0.DURATION,s1_0.INSTRUCTION,s1_0.STEP_NUMBER from biscuit.RECIPE_STEP s1_0 where s1_0.STEPS_RECIPE_HJID=?
+13:30:04:480 DEBUG select i1_0.INGREDIENTS_RECIPE_HJID,i1_0.HJID,a1_0.HJID,a1_0.UNIT,a1_0.VALUE_,i1_0.NAME_ from biscuit.INGREDIENTS i1_0 left join biscuit.INGREDIENT_AMOUNT a1_0 on a1_0.HJID=i1_0.AMOUNT_INGREDIENTS_HJID where i1_0.INGREDIENTS_RECIPE_HJID=?
+13:30:04:483 DEBUG select s1_0.STEPS_RECIPE_HJID,s1_0.HJID,s1_0.DURATION,s1_0.INSTRUCTION,s1_0.STEP_NUMBER from biscuit.RECIPE_STEP s1_0 where s1_0.STEPS_RECIPE_HJID=?
+13:30:04:484 DEBUG select i1_0.INGREDIENTS_RECIPE_HJID,i1_0.HJID,a1_0.HJID,a1_0.UNIT,a1_0.VALUE_,i1_0.NAME_ from biscuit.INGREDIENTS i1_0 left join biscuit.INGREDIENT_AMOUNT a1_0 on a1_0.HJID=i1_0.AMOUNT_INGREDIENTS_HJID where i1_0.INGREDIENTS_RECIPE_HJID=?
+13:30:04:491 DEBUG select a1_0.HJID,a1_0.HJINDEX,a1_0.HJVALUE from biscuit.INGREDIENTS_ALLERGENS a1_0 where a1_0.HJID=?
+13:30:04:493 DEBUG select a1_0.HJID,a1_0.HJINDEX,a1_0.HJVALUE from biscuit.INGREDIENTS_ALLERGENS a1_0 where a1_0.HJID=?
+13:30:04:494 DEBUG select a1_0.HJID,a1_0.HJINDEX,a1_0.HJVALUE from biscuit.INGREDIENTS_ALLERGENS a1_0 where a1_0.HJID=?
+13:30:04:496 DEBUG select a1_0.HJID,a1_0.HJINDEX,a1_0.HJVALUE from biscuit.INGREDIENTS_ALLERGENS a1_0 where a1_0.HJID=?
+13:30:04:498 DEBUG select a1_0.HJID,a1_0.HJINDEX,a1_0.HJVALUE from biscuit.INGREDIENTS_ALLERGENS a1_0 where a1_0.HJID=?
+13:30:04:500 DEBUG select a1_0.HJID,a1_0.HJINDEX,a1_0.HJVALUE from biscuit.INGREDIENTS_ALLERGENS a1_0 where a1_0.HJID=?
+13:30:04:501 TRACE Loaded object:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<recipeBook Hjid="1" xmlns="http://example.org/biscuits">
+    <recipe difficulty="EASY" created="2025-09-01T10:00:00.000" updated="2025-09-05T09:15:00.000" Hjid="1">
+        <title>Classic Chocolate Biscuits</title>
+        <ingredients Hjid="1">
+            <name>Flour</name>
+            <amount unit="g" Hjid="2">250.0000000000</amount>
+            <allergens>GLUTEN EGGS</allergens>
+        </ingredients>
+        <ingredients Hjid="2">
+            <name>Butter</name>
+            <amount unit="g" Hjid="3">100.0000000000</amount>
+            <allergens>MILK</allergens>
+        </ingredients>
+        <ingredients Hjid="3">
+            <name>Cocoa Powder</name>
+            <amount unit="g" Hjid="4">50.0000000000</amount>
+            <allergens></allergens>
+        </ingredients>
+        <sweetener Hjid="1">
+            <sugar unit="g" Hjid="1">80.0000000000</sugar>
+        </sweetener>
+        <steps stepNumber="1" Hjid="1">
+            <instruction>Sift flour and cocoa together.</instruction>
+            <duration>5</duration>
+        </steps>
+        <steps stepNumber="2" Hjid="2">
+            <instruction>Mix with butter until crumbly.</instruction>
+        </steps>
+        <steps stepNumber="3" Hjid="3">
+            <instruction>Bake until crisp.</instruction>
+            <duration>15</duration>
+        </steps>
+        <tray material="metal" Hjid="1">
+            <length>30.0000000000</length>
+            <width>20.0000000000</width>
+        </tray>
+        <chocolateBiscuit shape="ROUND" flour="WHEAT" Hjid="1">
+            <cocoaContent>70</cocoaContent>
+        </chocolateBiscuit>
+        <recipeNotes language="en" Hjid="2">Use a firm jam to avoid soggy centers.</recipeNotes>
+        <biscuitNotes language="en" Hjid="1">Cut a small vent in the top to prevent bubbling.</biscuitNotes>
+    </recipe>
+    <recipe difficulty="MEDIUM" created="2025-09-02T14:30:00.000" updated="2025-09-06T12:00:00.000" Hjid="2">
+        <title>Jam-Filled Biscuits</title>
+        <ingredients Hjid="4">
+            <name>Flour</name>
+            <amount unit="g" Hjid="6">200.0000000000</amount>
+            <allergens>GLUTEN</allergens>
+        </ingredients>
+        <ingredients Hjid="5">
+            <name>Butter</name>
+            <amount unit="g" Hjid="7">120.0000000000</amount>
+            <allergens>MILK</allergens>
+        </ingredients>
+        <ingredients Hjid="6">
+            <name>Strawberry Jam</name>
+            <amount unit="tbsp" Hjid="8">3.0000000000</amount>
+            <allergens></allergens>
+        </ingredients>
+        <sweetener Hjid="2">
+            <honey unit="ml" Hjid="5">50.0000000000</honey>
+        </sweetener>
+        <steps stepNumber="1" Hjid="4">
+            <instruction>Mix flour and butter into dough.</instruction>
+        </steps>
+        <steps stepNumber="2" Hjid="5">
+            <instruction>Roll out and cut shapes.</instruction>
+        </steps>
+        <steps stepNumber="3" Hjid="6">
+            <instruction>Add jam filling and bake.</instruction>
+            <duration>other:untilGolden</duration>
+        </steps>
+        <tray material="ceramic" Hjid="2">
+            <length>25.0000000000</length>
+            <width>25.0000000000</width>
+        </tray>
+        <jamBiscuit shape="HEART" flour="RYE" Hjid="2">
+            <jamFlavor>Strawberry</jamFlavor>
+        </jamBiscuit>
+        <recipeNotes language="en" Hjid="4">Keep dough chilled 30 minutes before rolling.</recipeNotes>
+        <biscuitNotes language="en" Hjid="3">Store in an airtight container; best eaten within 3 days.</biscuitNotes>
+    </recipe>
+</recipeBook>
+
+13:30:04:501 DEBUG Checking the sample object identity: Etalon vs Loaded.
+13:30:04:506 DEBUG Checking the sample object identity: Etalon vs Etalon clone.
+13:30:04:508 TRACE Checking the sample object identity: Loaded vs Loaded clone.
+13:30:04:508 TRACE Checking the sample object identity: Etalon vs Initial vs Loaded.
+13:30:04:508 INFO Testing sample, SUCCESS [biscuit.xml].
+13:30:04:508 DEBUG Testing samples, finish
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://example.org/biscuits"
+	targetNamespace="http://example.org/biscuits"
+	elementFormDefault="qualified"
+	xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+	jaxb:version="3.0">
+	
+	<!-- ================== SIMPLE TYPES ================== -->
+	
+	<!-- Restriction: allowed flour types -->
+	<xs:simpleType name="FlourType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="WHEAT"/>
+			<xs:enumeration value="RYE"/>
+			<xs:enumeration value="OAT"/>
+			<xs:enumeration value="CORN"/>
+			<xs:enumeration value="GLUTEN_FREE"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!-- List: multiple allergens -->
+	<xs:simpleType name="AllergenList">
+		<xs:list itemType="xs:string"/>
+	</xs:simpleType>
+	
+	<!-- Union: either minutes or descriptive string -->
+	<xs:simpleType name="CookingTime">
+		<xs:union memberTypes="xs:int xs:string"/>
+	</xs:simpleType>
+	
+	<!-- Restriction: biscuit shapes -->
+	<xs:simpleType name="BiscuitShape">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ROUND"/>
+			<xs:enumeration value="SQUARE"/>
+			<xs:enumeration value="STAR"/>
+			<xs:enumeration value="HEART"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!-- ================== COMPLEX TYPES ================== -->
+	
+	<!-- Simple content with attributes -->
+	<xs:complexType name="IngredientAmount">
+		<xs:simpleContent>
+			<xs:extension base="xs:decimal">
+				<xs:attribute name="unit" type="xs:string" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<!-- Sequence: recipe steps -->
+	<xs:complexType name="RecipeStep">
+		<xs:sequence>
+			<xs:element name="instruction" type="xs:string"/>
+			<xs:element name="duration" type="tns:CookingTime" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="stepNumber" type="xs:int" use="required"/>
+	</xs:complexType>
+	
+	<!-- Choice: different sweeteners -->
+	<xs:complexType name="SweetenerChoice">
+		<xs:choice>
+			<xs:element name="sugar" type="tns:IngredientAmount"/>
+			<xs:element name="honey" type="tns:IngredientAmount"/>
+			<xs:element name="syrup" type="tns:IngredientAmount"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<!-- All: baking tray dimensions -->
+	<xs:complexType name="TrayType">
+		<xs:all>
+			<xs:element name="length" type="xs:decimal"/>
+			<xs:element name="width" type="xs:decimal"/>
+		</xs:all>
+		<xs:attribute name="material" type="xs:string" default="metal"/>
+	</xs:complexType>
+	
+	<!-- ================== GLOBAL TYPES ================== -->
+		
+	<xs:complexType name="Notes">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="language" type="xs:string"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<!-- ================== Class structures ================== -->
+		
+	<!-- Abstract base and substitution group -->
+	<xs:complexType name="AbstractBiscuit" abstract="true">
+		<xs:attribute name="shape" type="tns:BiscuitShape"/>
+		<xs:attribute name="flour" type="tns:FlourType"/>
+	</xs:complexType>
+	
+	<xs:complexType name="ChocolateBiscuit">
+		<xs:complexContent>
+			<xs:extension base="tns:AbstractBiscuit">
+				<xs:sequence>
+					<xs:element name="cocoaContent" type="xs:int"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:complexType name="JamBiscuit">
+		<xs:complexContent>
+			<xs:extension base="tns:AbstractBiscuit">
+				<xs:sequence>
+					<xs:element name="jamFlavor" type="xs:string"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:element name="biscuit" type="tns:AbstractBiscuit" abstract="true"/>
+	<xs:element name="chocolateBiscuit" type="tns:ChocolateBiscuit" substitutionGroup="tns:biscuit"/>
+	<xs:element name="jamBiscuit" type="tns:JamBiscuit" substitutionGroup="tns:biscuit"/>
+	
+	<!-- Attribute group -->
+	<xs:attributeGroup name="BakeMetadata">
+		<xs:attribute name="created" type="xs:dateTime"/>
+		<xs:attribute name="updated" type="xs:dateTime"/>
+	</xs:attributeGroup>
+	
+	<!-- ================== ROOT ================== -->
+	
+	<xs:element name="recipeBook">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="recipe" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="title" type="xs:string"/>
+							<xs:element name="ingredients" minOccurs="1" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name" type="xs:string"/>
+										<xs:element name="amount" type="tns:IngredientAmount"/>
+										<xs:element name="allergens" type="tns:AllergenList" minOccurs="0"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="sweetener" type="tns:SweetenerChoice" minOccurs="0"/>
+							<xs:element name="steps" minOccurs="1" maxOccurs="unbounded" type="tns:RecipeStep"/>
+							<xs:element name="tray" type="tns:TrayType"/>
+							<xs:element ref="tns:biscuit"/>
+							<xs:element minOccurs="0" name="recipeNotes" nillable="true" type="tns:Notes"/>
+							<xs:element minOccurs="0" name="biscuitNotes" nillable="true" type="tns:Notes"/>
+						</xs:sequence>
+						<xs:attribute name="difficulty" type="xs:string"/>
+						<xs:attributeGroup ref="tns:BakeMetadata"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>
